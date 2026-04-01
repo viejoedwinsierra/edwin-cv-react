@@ -72,7 +72,7 @@ export const content = {
       cloud: ['Azure Functions', 'Azure services', 'AWS academic labs', 'Containerized and Kubernetes-oriented platforms'],
       runtimes: ['OpenShift', 'Azure-native serverless workloads', 'Distributed business applications']
     },
-    supportedProjects: ['central_app_support', 'Hurto_de_terminales', 'Inmobiliario', 'NCA', 'Pandora', 'Papitos', 'Playflow', 'RegistrarDuplicados'],
+    supportedProjects: ['central_app_support', 'Hurto_de_terminales', 'Inmobiliario', 'NCA', 'Pandora', 'Papiros', 'Playflow', 'RegistrarDuplicados'],
     experience: [
       {
         role: 'IT Services Specialist – Cloud & Full-Stack Development',
