@@ -1,5 +1,5 @@
 # CV Web de Edwin Gustavo Sierra Poveda
-
+ 
 Proyecto React + Vite creado a partir de la información del CV/LinkedIn y con una estética inspirada en el formato 273 (dos columnas, panel lateral azul y contenido principal limpio).
 
 ## Cómo usar
