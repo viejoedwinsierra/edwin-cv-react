@@ -1,15 +1,18 @@
 export const experience = [
   {
-    role: "Especialista de Servicios TI – Aplicaciones Empresariales, Cloud y Backend",
+    role: "Especialista de Desarrollo de Software, Backend y Cloud",
     company: "Colombia Telecomunicaciones S.A.",
     period: "Mar 2022 – May 2026",
     location: "Bogotá, Colombia",
     points: [
-      "Cargo oficial de Especialista de Servicios TI, asignado a la evolución técnica, confiabilidad y continuidad operativa de la aplicación de gestión de terminales hurtados dentro de un portafolio de plataformas internas empresariales.",
-      "Me desempeñé como especialista de aplicación y referente técnico, colaborando en Scrum con otros especialistas TI, desarrolladores Full Stack, QA, infraestructura, especialistas de bases de datos y representantes de negocio.",
-      "Apoyé obligaciones regulatorias del sector telecomunicaciones relacionadas con la gestión de terminales hurtados e IMEI mediante una plataforma crítica que requería conocimiento integral de reglas de negocio, arquitectura, datos, pruebas, despliegues y operación productiva.",
-      "Ejecuté y acompañé la migración de Oracle a PostgreSQL, incluyendo análisis, validación de datos, ajustes de aplicación, coordinación de despliegues y estabilización productiva.",
-      "Contribuí en servicios backend, cargas de trabajo en Microsoft Azure, automatización CI/CD, integraciones empresariales, análisis de causa raíz, resolución de incidentes y mejora continua de la plataforma.",
+      "Cargo oficial de Especialista de Servicios TI con responsabilidades enfocadas en desarrollo de software, ingeniería backend, modernización de aplicaciones, servicios cloud, bases de datos e integración empresarial para una plataforma crítica de gestión de terminales hurtados.",
+      "Desarrollé, mantuve y evolucioné componentes backend, desempeñándome además como especialista de aplicación y referente técnico dentro de un equipo Scrum con desarrolladores Full Stack, QA, infraestructura, especialistas de bases de datos y representantes de negocio.",
+      "Desarrollé y soporté capacidades de aplicación para procesos regulatorios del sector telecomunicaciones relacionados con terminales hurtados e IMEI, trabajando sobre reglas de negocio, arquitectura, datos, pruebas, despliegues y operación productiva.",
+      "Implementé y acompañé la modernización de Oracle a PostgreSQL, incluyendo análisis de SQL y código de aplicación, validación de datos, ajustes de componentes, coordinación de despliegues y estabilización productiva.",
+      "Desarrollé y mantuve servicios backend utilizando Java, Spring Boot, Python, Flask, APIs REST, SQL y procesamiento batch, además de contribuir en cargas de trabajo de Microsoft Azure e integraciones empresariales.",
+      "Implementé y soporté automatización de build, pruebas y despliegues mediante Azure DevOps, Git y pipelines CI/CD, y desarrollé pruebas unitarias con JUnit y Mockito.",
+      "Diagnostiqué defectos de software mediante análisis de código fuente, logs, consultas de base de datos y comportamiento de servicios; realicé análisis de causa raíz y resolución de incidentes productivos complejos.",
+      "Contribuí a un ecosistema de aplicaciones empresariales distribuido en aproximadamente 120 repositorios de Azure DevOps, apoyando documentación técnica, mantenibilidad y mejora continua de la plataforma.",
       "Apliqué una perspectiva orientada a datos para mejorar trazabilidad, calidad de información, documentación técnica y uso de datos operativos en la toma de decisiones."
     ],
     stack: [

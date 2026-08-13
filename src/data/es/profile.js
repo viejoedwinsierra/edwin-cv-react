@@ -1,16 +1,16 @@
 export const profile = {
   profile: {
     name: 'Edwin Gustavo Sierra Poveda',
-    title: 'Especialista de Servicios TI | Aplicaciones Empresariales | Cloud y Backend',
+    title: 'Ingeniero de Software | Desarrollador Backend | Java, Spring Boot, Python y Cloud',
     location: 'Chía / Bogotá, Colombia',
     linkedin: 'https://www.linkedin.com/in/edwin-gustavo-sierra-poveda-45994a109/',
     github: 'https://github.com/viejoedwinsierra',
-    summary: 'Especialista de Servicios TI con amplia experiencia en modernización, evolución técnica y continuidad operativa de aplicaciones empresariales críticas. Me desempeñé como especialista de aplicación y referente técnico de una plataforma para la gestión de terminales hurtados que soporta obligaciones regulatorias del sector telecomunicaciones, trabajando en un entorno Scrum multidisciplinario con especialistas de aplicaciones, desarrolladores Full Stack, QA, infraestructura y representantes de negocio. Base sólida en Java, Python, PostgreSQL, Oracle, Microsoft Azure, integración empresarial, automatización CI/CD, migración de bases de datos, resolución de incidentes y soporte productivo.',
+    summary: 'Ingeniero de Software y Desarrollador Backend con experiencia en diseño, desarrollo, modernización, integración y soporte productivo de aplicaciones empresariales críticas. Experiencia práctica con Java, Spring Boot, Python, Flask, APIs REST, PostgreSQL, Oracle, Microsoft Azure y Azure DevOps. He trabajado en servicios backend, migración de bases de datos, automatización CI/CD, pruebas unitarias, integración empresarial, procesos batch, troubleshooting y análisis de causa raíz. Combino capacidades de desarrollo de software con conocimiento de operación y negocio, lo que me permite construir y evolucionar soluciones confiables desde el código y los datos hasta el despliegue y la producción.',
     highlights: [
-      'Especialista técnico de una plataforma crítica para gestión de terminales hurtados',
-      'Modernización Oracle a PostgreSQL manteniendo continuidad productiva',
-      'Entrega Scrum multidisciplinaria con Full Stack, QA, infraestructura y negocio',
-      'Azure, Java, Python, CI/CD, integración empresarial y confiabilidad operativa'
+      'Desarrollo backend con Java, Spring Boot, Python, Flask y APIs REST',
+      'Modernización de aplicaciones empresariales y migración Oracle a PostgreSQL',
+      'Microsoft Azure, Azure DevOps, Git y automatización CI/CD',
+      'JUnit, Mockito, pruebas de integración, troubleshooting y confiabilidad productiva'
     ]
   },
   contact: [
@@ -27,21 +27,21 @@ export const profile = {
     },
     {
       label: 'Posicionamiento profesional',
-      value: 'Especialista de Aplicaciones Empresariales · Ingeniero Cloud y Backend · Referente Técnico de Aplicación'
+      value: 'Ingeniero de Software · Desarrollador Backend · Java y Python · Aplicaciones Cloud'
     }
   ],
-  sidebarProfile: 'Especialista de aplicaciones empresariales enfocado en modernización, confiabilidad, backend, servicios cloud, integración de datos y continuidad operativa. Experiencia en soporte de aplicaciones críticas, migración de bases de datos, gestión de incidentes y entrega colaborativa con Scrum.',
+  sidebarProfile: 'Ingeniero de software enfocado en desarrollo backend, modernización de aplicaciones empresariales, servicios cloud, APIs, bases de datos, integración, automatización y confiabilidad productiva. Experiencia a lo largo del ciclo de software, desde desarrollo y pruebas hasta CI/CD, despliegue, troubleshooting y mejora continua.',
   languages: [
     'Español: nativo',
     'Inglés: fortalecimiento activo de fluidez para entrevistas, presentaciones técnicas y colaboración internacional'
   ],
   interests: [
-    'Ingeniería de software empresarial',
-    'Modernización cloud',
-    'Arquitectura backend e integración',
-    'Ingeniería de datos y analítica aplicada',
-    'Automatización y CI/CD',
-    'Confiabilidad de plataformas y mejora continua'
+    'Desarrollo backend e ingeniería de software',
+    'Desarrollo Java y Spring Boot',
+    'Desarrollo Python y automatización',
+    'Aplicaciones cloud-native y distribuidas',
+    'Ingeniería de datos y modernización de bases de datos',
+    'DevOps, CI/CD, testing y calidad de software'
   ],
   sections: {
     experience: 'Experiencia profesional',

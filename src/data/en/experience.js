@@ -1,15 +1,18 @@
 export const experience = [
   {
-    role: "IT Services Specialist – Enterprise Applications, Cloud & Backend",
+    role: "Specialist  Software Development, Backend & Cloud",
     company: "Colombia Telecomunicaciones S.A.",
     period: "Mar 2022 – May 2026",
     location: "Bogotá, Colombia",
     points: [
-      "Official IT Services Specialist assigned to the technical evolution, reliability, and operational continuity of the stolen-device management application within a portfolio of internal enterprise platforms.",
-      "Served as the application specialist and technical reference, collaborating in Scrum with other IT specialists, Full Stack developers, QA engineers, infrastructure teams, database specialists, and business representatives.",
-      "Supported telecommunications regulatory obligations related to stolen-device and IMEI management through a mission-critical platform requiring broad knowledge of business rules, architecture, data, testing, deployments, and production operations.",
-      "Executed and supported the migration from Oracle to PostgreSQL, including analysis, data validation, application adjustments, deployment coordination, and production stabilization.",
-      "Contributed to backend services, Microsoft Azure workloads, CI/CD automation, enterprise integrations, root cause analysis, incident resolution, and continuous platform improvement.",
+      "Official IT Services Specialist with responsibilities focused on software development, backend engineering, application modernization, cloud services, databases, and enterprise integration for a mission-critical stolen-device management platform.",
+      "Developed, maintained, and evolved backend components while serving as an application specialist and technical reference in a cross-functional Scrum team with Full Stack developers, QA engineers, infrastructure teams, database specialists, and business representatives.",
+      "Developed and supported application capabilities for telecommunications regulatory processes related to stolen-device and IMEI management, working across business rules, architecture, data, testing, deployment, and production operations.",
+      "Implemented and supported the Oracle-to-PostgreSQL modernization, including SQL and application-code analysis, data validation, component adjustments, deployment coordination, and production stabilization.",
+      "Developed and maintained backend services using Java, Spring Boot, Python, Flask, REST APIs, SQL, and batch processing, and contributed to Microsoft Azure workloads and enterprise integrations.",
+      "Implemented and supported build, test, and deployment automation with Azure DevOps, Git, and CI/CD pipelines, and created unit tests using JUnit and Mockito.",
+      "Diagnosed software defects through source-code analysis, logs, database queries, and service behavior; performed root cause analysis and resolved complex production incidents.",
+      "Contributed to an enterprise application ecosystem distributed across approximately 120 Azure DevOps repositories, supporting technical documentation, maintainability, and continuous platform improvement.",
       "Applied a data-oriented perspective to application operations by improving traceability, data quality, technical documentation, and the use of operational information for decision-making."
     ],
     stack: [
