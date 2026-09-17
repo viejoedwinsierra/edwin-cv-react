@@ -1,11 +1,11 @@
 export const profile = {
   profile: {
     name: 'Edwin Gustavo Sierra Poveda',
-    title: 'Ingeniero de Software | Desarrollador Backend | Java, Spring Boot, Python y Cloud',
+    title: 'Especialista de Servicios TI | Aplicaciones Empresariales | Full Stack | Cloud, Bases de Datos y Data',
     location: 'Chía / Bogotá, Colombia',
     linkedin: 'https://www.linkedin.com/in/edwin-gustavo-sierra-poveda-45994a109/',
     github: 'https://github.com/viejoedwinsierra',
-    summary: 'Ingeniero de Software y Desarrollador Backend con trayectoria en Movistar Colombia, SOLEM, Teka Services y Andicall, con experiencia en desarrollo y soporte de aplicaciones Java; complementada con experiencia como analista de datos y KPIs en PATH. Experiencia práctica con Java, Spring Boot, Python, Flask, APIs REST, PostgreSQL, Oracle, Microsoft Azure y Azure DevOps. He trabajado en servicios backend, migración de bases de datos, automatización CI/CD, pruebas unitarias, integración empresarial, procesos batch, troubleshooting y análisis de causa raíz. Combino capacidades de desarrollo de software con conocimiento de operación y negocio, experiencia en BI, automatización y uso práctico de IA generativa como apoyo al desarrollo. También he trabajado con integraciones empresariales SAP/SuccessFactors, conectividad Azure mediante VPN y redes internas, y proyectos de visión por computador y procesamiento de documentos.',
+    summary: 'Especialista de Servicios TI con trayectoria transversal desde telecomunicaciones, redes y análisis de KPIs hasta aplicaciones empresariales, desarrollo Full Stack, bases de datos, integración, cloud, DevOps y datos. Experiencia en Movistar Colombia, SOLEM, Teka Services, Andicall y PATH. Experiencia práctica con Java, Spring Boot, Python, Flask, APIs REST, PostgreSQL, Oracle, Microsoft Azure y Azure DevOps. He trabajado en servicios backend, migración de bases de datos, automatización CI/CD, pruebas unitarias, integración empresarial, procesos batch, troubleshooting y análisis de causa raíz. Combino capacidades de desarrollo de software con conocimiento de operación y negocio, experiencia en BI, automatización y uso práctico de IA generativa como apoyo al desarrollo. También he trabajado con integraciones empresariales SAP/SuccessFactors, conectividad Azure mediante VPN y redes internas, y proyectos de visión por computador y procesamiento de documentos.',
     highlights: [
       'Experiencia con Java en Movistar Colombia, SOLEM, Teka Services y Andicall',
       'Desarrollo backend con Spring Boot, Python, Flask y APIs REST',
@@ -15,24 +15,7 @@ export const profile = {
       'IA generativa aplicada al desarrollo, visión por computador, SAP/SuccessFactors y conectividad Azure' 
     ]
   },
-  contact: [
-    { label: 'Ubicación', value: 'Chía / Bogotá, Colombia' },
-    {
-      label: 'LinkedIn',
-      value: 'linkedin.com/in/edwin-gustavo-sierra-poveda-45994a109',
-      href: 'https://www.linkedin.com/in/edwin-gustavo-sierra-poveda-45994a109/'
-    },
-    {
-      label: 'GitHub',
-      value: 'github.com/viejoedwinsierra',
-      href: 'https://github.com/viejoedwinsierra'
-    },
-    {
-      label: 'Posicionamiento profesional',
-      value: 'Ingeniero de Software · Desarrollador Backend · Java y Python · Aplicaciones Cloud'
-    }
-  ],
-  sidebarProfile: 'Ingeniero de software enfocado en desarrollo backend, modernización de aplicaciones empresariales, servicios cloud, APIs, bases de datos, integración, automatización y confiabilidad productiva. Experiencia a lo largo del ciclo de software, desde desarrollo y pruebas hasta CI/CD, despliegue, troubleshooting y mejora continua.',
+  sidebarProfile: 'Especialista de Servicios TI enfocado en aplicaciones empresariales, desarrollo Full Stack/backend, bases de datos, integración, servicios cloud, automatización y confiabilidad productiva. Experiencia a lo largo del ciclo de software, desde desarrollo y pruebas hasta CI/CD, despliegue, troubleshooting y mejora continua.',
   languages: [
     'Español: nativo',
     'Inglés: fortalecimiento activo de fluidez para entrevistas, presentaciones técnicas y colaboración internacional'

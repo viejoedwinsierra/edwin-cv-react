@@ -6,7 +6,7 @@ export const education = [
     area: "Advanced studies in data science, cloud, and applied analytics"
   },
   {
-    degree: "Master’s Degree in Data Science",
+    degree: "Graduate studies in Data Science (not completed)",
     school: "Pontificia Universidad Javeriana Cali",
     period: "2022",
     area: "Analytics, modeling, and data science"

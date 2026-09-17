@@ -1,11 +1,11 @@
 export const profile = {
   profile: {
     name: 'Edwin Gustavo Sierra Poveda',
-    title: 'Software Engineer | Backend Developer | Java, Spring Boot, Python & Cloud',
+    title: 'IT Services Specialist | Enterprise Applications | Full Stack | Cloud, Databases & Data',
     location: 'Chía / Bogotá, Colombia',
     linkedin: 'https://www.linkedin.com/in/edwin-gustavo-sierra-poveda-45994a109/',
     github: 'https://github.com/viejoedwinsierra',
-    summary: 'Software Engineer and Backend Developer with experience in the design, development, modernization, integration, and production support of mission-critical enterprise applications. Hands-on background with Java, Spring Boot, Python, Flask, REST APIs, PostgreSQL, Oracle, Microsoft Azure, and Azure DevOps. Experienced in backend services, database migration, CI/CD automation, unit testing, enterprise integration, batch processing, troubleshooting, and root cause analysis. Combines software development skills with production and business-domain knowledge, BI, automation, and practical use of generative AI as a software-development assistant. Also experienced with SAP/SuccessFactors integrations, Azure connectivity through VPNs and internal networks, and computer-vision/document-processing projects.',
+    summary: 'IT Services Specialist with a cross-functional career spanning telecommunications, network performance and KPI analytics through enterprise applications, Full Stack development, databases, integration, cloud, DevOps, and data. Experienced in the design, development, modernization, integration, and production support of mission-critical enterprise applications. Hands-on background with Java, Spring Boot, Python, Flask, REST APIs, PostgreSQL, Oracle, Microsoft Azure, and Azure DevOps. Experienced in backend services, database migration, CI/CD automation, unit testing, enterprise integration, batch processing, troubleshooting, and root cause analysis. Combines software development skills with production and business-domain knowledge, BI, automation, and practical use of generative AI as a software-development assistant. Also experienced with SAP/SuccessFactors integrations, Azure connectivity through VPNs and internal networks, and computer-vision/document-processing projects.',
     highlights: [
       'Java experience across Movistar Colombia, SOLEM, Teka Services, and Andicall',
       'Backend development with Spring Boot, Python, Flask, and REST APIs',
@@ -15,24 +15,7 @@ export const profile = {
       'Generative AI for software development, computer vision, SAP/SuccessFactors, and Azure connectivity'
     ]
   },
-  contact: [
-    { label: 'Location', value: 'Chía / Bogotá, Colombia' },
-    {
-      label: 'LinkedIn',
-      value: 'linkedin.com/in/edwin-gustavo-sierra-poveda-45994a109',
-      href: 'https://www.linkedin.com/in/edwin-gustavo-sierra-poveda-45994a109/'
-    },
-    {
-      label: 'GitHub',
-      value: 'github.com/viejoedwinsierra',
-      href: 'https://github.com/viejoedwinsierra'
-    },
-    {
-      label: 'Professional positioning',
-      value: 'Software Engineer · Backend Developer · Java & Python · Cloud Applications'
-    }
-  ],
-  sidebarProfile: 'Software engineer focused on backend development, enterprise application modernization, cloud services, APIs, databases, integration, automation, and production reliability. Experienced across the software lifecycle from development and testing to CI/CD, deployment, troubleshooting, and continuous improvement.',
+  sidebarProfile: 'IT Services Specialist focused on enterprise applications, Full Stack/backend development, databases, integration, cloud services, automation, and production reliability. Experienced across the software lifecycle from development and testing to CI/CD, deployment, troubleshooting, and continuous improvement.',
   languages: [
     'Spanish: native',
     'English: actively strengthening fluency for interviews, technical presentations, and international collaboration'

@@ -1,26 +1,36 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useCvContent } from './hooks/useCvContent';
 import { TopBar } from './components/layout/TopBar';
-import { Sidebar } from './components/layout/Sidebar';
-import { HeroSection } from './components/sections/HeroSection';
-import { CompetenciesSection } from './components/sections/CompetenciesSection';
-import { PlatformsSection } from './components/sections/PlatformsSection';
-import { ProjectsSection } from './components/sections/ProjectsSection';
-import { ExperienceSection } from './components/sections/ExperienceSection';
-import { EducationSection } from './components/sections/EducationSection';
-import { SkillsSection } from './components/sections/SkillsSection';
-import { EngineeringVisionSection } from './components/sections/EngineeringVisionSection';
-import { CareerGrowthSection } from './components/sections/CareerGrowthSection';
+import { WebCvView } from './views/WebCvView';
+import { PrintCvView } from './views/PrintCvView';
+import { getPrintCv } from './selectors/cvSelectors';
+
+const validViews = new Set(['profile', 'experience', 'projects', 'skills', 'education', 'certifications']);
+
+function getInitialView() {
+  const hash = window.location.hash.replace('#/', '').replace('#', '');
+  return validViews.has(hash) ? hash : 'profile';
+}
 
 function App() {
   const [lang, setLang] = useState('es');
+  const [variant, setVariant] = useState('itServices');
+  const [activeView, setActiveView] = useState(getInitialView);
   const [openJobs, setOpenJobs] = useState([0]);
   const cv = useCvContent(lang);
+  const printCv = useMemo(() => getPrintCv(cv, lang, variant), [cv, lang, variant]);
 
   const toggleJob = (index) => {
     setOpenJobs((current) => current.includes(index)
       ? current.filter((item) => item !== index)
       : [...current, index]);
+  };
+
+  const navigate = (view) => {
+    if (!validViews.has(view)) return;
+    setActiveView(view);
+    window.history.replaceState(null, '', `#/${view}`);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -30,29 +40,16 @@ function App() {
         meta={cv.meta}
         linkedin={cv.profile.linkedin}
         github={cv.profile.github}
+        activeView={activeView}
+        onNavigate={navigate}
+        variant={variant}
+        onVariantChange={setVariant}
         onToggleLanguage={() => setLang((current) => current === 'es' ? 'en' : 'es')}
         onPrint={() => window.print()}
       />
 
-      <main className="resume">
-        <Sidebar cv={cv} lang={lang} />
-        <section className="content">
-          <HeroSection profile={cv.profile} meta={cv.meta} />
-          <EngineeringVisionSection vision={cv.vision} />
-          <CompetenciesSection competencies={cv.competencies} title={cv.sections.competencies} lang={lang} />
-          <PlatformsSection platforms={cv.platforms} title={cv.sections.platforms} lang={lang} />
-          <ProjectsSection projects={cv.supportedProjects} title={cv.sections.projects} lang={lang} />
-          <ExperienceSection experience={cv.experience} title={cv.sections.experience} lang={lang} openJobs={openJobs} onToggleJob={toggleJob} />
-          <EducationSection education={cv.education} certifications={cv.certifications} sections={cv.sections} />
-          <SkillsSection skills={cv.skills} platforms={cv.platforms} title={cv.sections.stack} />
-          <CareerGrowthSection growth={cv.growth} />
-
-          <footer className="resume-footer">
-            <strong>{cv.profile.name}</strong>
-            <span>{lang === 'es' ? 'CV interactivo listo para reclutamiento y exportación a PDF.' : 'Interactive CV ready for recruiting and PDF export.'}</span>
-          </footer>
-        </section>
-      </main>
+      <WebCvView cv={cv} lang={lang} activeView={activeView} onNavigate={navigate} openJobs={openJobs} onToggleJob={toggleJob} />
+      <PrintCvView cv={printCv} lang={lang} />
     </div>
   );
 }

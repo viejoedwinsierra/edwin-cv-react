@@ -17,7 +17,12 @@ export function EducationSection({ education, certifications, sections }) {
       <div>
         <SectionTitle>{sections.certifications}</SectionTitle>
         <div className="stacked-cards certifications-grid">
-          {certifications.map((item) => <article className="mini-card certificate-card" key={item}><h3>{item}</h3></article>)}
+          {certifications.map((item) => (
+            <article className="mini-card certificate-card" key={item.id ?? item}>
+              <h3>{item.displayName ?? item}</h3>
+              {item.issuer && <small>{item.issuer}</small>}
+            </article>
+          ))}
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ export const education = [
     area: "Ciencia de datos, cloud y analítica aplicada"
   },
   {
-    degree: "Maestría en Ciencia de Datos",
+    degree: "Estudios de Maestría en Ciencia de Datos (no finalizados)",
     school: "Pontificia Universidad Javeriana Cali",
     period: "2022",
     area: "Analítica, modelado y ciencia de datos"
