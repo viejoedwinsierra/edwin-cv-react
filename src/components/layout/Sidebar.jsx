@@ -2,7 +2,12 @@ import React from 'react';
 import { SidebarCard } from '../ui/SidebarCard';
 import { targetRoles } from '../../data/core/roleFamilies';
 
-const sidebarContactKinds = new Set(['phone', 'linkedin', 'github']);
+const sidebarContactKinds = new Set([
+  'phone',
+  'website',
+  'linkedin',
+  'github'
+]);
 
 export function Sidebar({ cv, lang }) {
   const contactItems = cv.contact.filter((item) => sidebarContactKinds.has(item.kind));
