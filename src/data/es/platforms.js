@@ -25,7 +25,9 @@ export const platforms = {
   cloud: [
     "Azure Functions",
     "Servicios Azure",
-    "Laboratorios académicos AWS",
+    "AWS · ecosistema de proveedores y formación práctica",
+    "Oracle Cloud · formación/certificación de arquitectura",
+    "Entornos empresariales multicloud",
     "Plataformas containerizadas y orientadas a Kubernetes"
   ],
   runtimes: [

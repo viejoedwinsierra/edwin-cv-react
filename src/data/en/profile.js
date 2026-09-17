@@ -5,12 +5,14 @@ export const profile = {
     location: 'Chía / Bogotá, Colombia',
     linkedin: 'https://www.linkedin.com/in/edwin-gustavo-sierra-poveda-45994a109/',
     github: 'https://github.com/viejoedwinsierra',
-    summary: 'Software Engineer and Backend Developer with experience in the design, development, modernization, integration, and production support of mission-critical enterprise applications. Hands-on background with Java, Spring Boot, Python, Flask, REST APIs, PostgreSQL, Oracle, Microsoft Azure, and Azure DevOps. Experienced in backend services, database migration, CI/CD automation, unit testing, enterprise integration, batch processing, troubleshooting, and root cause analysis. Combines software development skills with strong production and business-domain knowledge, enabling the delivery of reliable solutions from code and data through deployment and operation.',
+    summary: 'Software Engineer and Backend Developer with experience in the design, development, modernization, integration, and production support of mission-critical enterprise applications. Hands-on background with Java, Spring Boot, Python, Flask, REST APIs, PostgreSQL, Oracle, Microsoft Azure, and Azure DevOps. Experienced in backend services, database migration, CI/CD automation, unit testing, enterprise integration, batch processing, troubleshooting, and root cause analysis. Combines software development skills with production and business-domain knowledge, BI, automation, and practical use of generative AI as a software-development assistant. Also experienced with SAP/SuccessFactors integrations, Azure connectivity through VPNs and internal networks, and computer-vision/document-processing projects.',
     highlights: [
-      'Backend development with Java, Spring Boot, Python, Flask, and REST APIs',
+      'Java experience across Movistar Colombia, SOLEM, Teka Services, and Andicall',
+      'Backend development with Spring Boot, Python, Flask, and REST APIs',
       'Enterprise application modernization and Oracle-to-PostgreSQL migration',
-      'Microsoft Azure, Azure DevOps, Git, and CI/CD automation',
-      'JUnit, Mockito, integration testing, troubleshooting, and production reliability'
+      'Multicloud environments: Azure, AWS, and Oracle Cloud; Azure DevOps, Git, and CI/CD automation',
+      'JUnit, Mockito, integration testing, troubleshooting, and production reliability',
+      'Generative AI for software development, computer vision, SAP/SuccessFactors, and Azure connectivity'
     ]
   },
   contact: [
@@ -41,7 +43,8 @@ export const profile = {
     'Python development and automation',
     'Cloud-native and distributed applications',
     'Data engineering and database modernization',
-    'DevOps, CI/CD, testing, and software quality'
+    'DevOps, CI/CD, testing, and software quality',
+    'Generative AI, computer vision, and technical automation'
   ],
   sections: {
     experience: 'Professional experience',

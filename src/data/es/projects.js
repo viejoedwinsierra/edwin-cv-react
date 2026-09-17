@@ -6,5 +6,7 @@ export const supportedProjects = [
   "Pandora",
   "Papiros",
   "Playflow",
-  "RegistrarDuplicados"
+  "RegistrarDuplicados",
+  "Computer_Vision_Utility_Bills",
+  "OCR_Document_Processing"
 ];

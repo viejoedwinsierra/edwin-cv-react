@@ -25,7 +25,9 @@ export const platforms = {
   cloud: [
     "Azure Functions",
     "Azure services",
-    "AWS academic labs",
+    "AWS · provider ecosystem and hands-on training",
+    "Oracle Cloud · architecture training/certification",
+    "Enterprise multicloud environments",
     "Containerized and Kubernetes-oriented platforms"
   ],
   runtimes: [
