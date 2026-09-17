@@ -8,9 +8,19 @@
   --line: #d7e3ec;
   --soft: #f5f9fc;
   --shadow: 0 18px 50px rgba(24, 58, 82, 0.12);
+  --sidebar-start: #4e88b5;
+  --sidebar-mid: #3f78a7;
+  --sidebar-end: #325f88;
+  --radius-lg: 22px;
+  --radius-md: 18px;
+  --radius-pill: 999px;
+  --desktop-breakpoint: 861px;
 }
 
 * { box-sizing: border-box; }
+html,
+body,
+#root { min-height: 100%; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -21,6 +31,10 @@ body {
 a { color: inherit; }
 button { font: inherit; }
 
+/* =========================================================
+   APPLICATION LAYOUT
+   ========================================================= */
+
 .page-shell {
   width: min(1360px, calc(100vw - 32px));
   margin: 24px auto 48px;
@@ -30,7 +44,7 @@ button { font: inherit; }
   display: flex;
   justify-content: flex-end;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 
 .toolbar-link,
@@ -61,8 +75,12 @@ button { font: inherit; }
   box-shadow: var(--shadow);
 }
 
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
 .sidebar {
-  background: linear-gradient(180deg, #4e88b5 0%, #3f78a7 42%, #325f88 100%);
+  background: linear-gradient(180deg, var(--sidebar-start) 0%, var(--sidebar-mid) 42%, var(--sidebar-end) 100%);
   color: white;
   padding: 38px 28px;
 }
@@ -125,10 +143,99 @@ button { font: inherit; }
 }
 .compact-list li::before { content: '•'; margin-right: 8px; }
 
+
+/* Target roles */
+
+.target-role-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.target-role-list li {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 0.74rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
 .content {
   padding: 38px;
   background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
 }
+
+
+/* Desktop: fixed application frame with independent sidebar/content scrolling */
+
+@media (min-width: 861px) {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  .page-shell {
+    width: min(1360px, calc(100vw - 32px));
+    height: 100vh;
+    margin: 0 auto;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .topbar {
+    position: relative;
+    z-index: 100;
+    flex: 0 0 auto;
+    margin-bottom: 12px;
+    padding: 2px 0;
+  }
+
+  .resume {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    min-height: 0;
+    height: 100%;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+  }
+
+  .content {
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+  }
+}
+
 
 .hero-card {
   padding: 26px 28px;
@@ -202,6 +309,10 @@ button { font: inherit; }
   text-align: center;
   color: var(--primary-dark);
 }
+
+/* =========================================================
+   EXPERIENCE TIMELINE
+   ========================================================= */
 
 .timeline { display: grid; gap: 16px; }
 .timeline-item {
@@ -291,38 +402,59 @@ button { font: inherit; }
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-@media (max-width: 1100px) {
-  .resume,
-  .split-section,
-  .platform-grid,
-  .project-chip-grid {
-    grid-template-columns: 1fr;
-  }
-  .hero-highlight-grid { grid-template-columns: 1fr; }
-}
 
 @media (max-width: 860px) {
-  .page-shell { width: min(100vw - 16px, 1320px); }
+.page-shell { width: min(100vw - 16px, 1320px); }
   .resume { grid-template-columns: 1fr; }
   .content, .sidebar { padding: 24px; }
   .toolbar { flex-wrap: wrap; }
   .timeline-header { flex-direction: column; }
   .timeline-meta { text-align: left; min-width: auto; }
-}
 
-@media print {
-  body { background: white; }
-  .no-print { display: none !important; }
-  .page-shell { width: 100%; margin: 0; }
-  .resume { box-shadow: none; border-radius: 0; }
-  .timeline-item, .platform-card, .mini-card, .hero-card {
-    break-inside: avoid;
-    page-break-inside: avoid;
+  /* Restore normal document flow on smaller screens. */
+html,
+  body,
+  #root {
+    height: auto;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  .page-shell {
+    height: auto;
+    overflow: visible;
+  }
+
+  .topbar {
+    position: static;
+  }
+
+  .resume {
+    height: auto;
+    overflow: visible;
+  }
+
+  .sidebar,
+  .content {
+    height: auto;
+    overflow: visible;
+  }
+
+  .career-evolution-intro {
+    padding: 16px;
+  }
+
+  .career-evolution-flow {
+    gap: 7px;
   }
 }
 
 
-/* Interactive header and competency segments */
+/* =========================================================
+   HEADER, NAVIGATION & INTERACTIONS
+   ========================================================= */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -340,7 +472,6 @@ button { font: inherit; }
   background: rgba(255,255,255,.8);
   border: 1px solid rgba(63,120,167,.14);
 }
-.toolbar { margin-bottom: 0; }
 .expertise-section { margin: 28px 0; }
 .competency-segments { display: grid; gap: 22px; }
 .competency-category {
@@ -429,17 +560,11 @@ button { font: inherit; }
   border-top: 1px solid var(--line);
   color: var(--muted);
 }
-@media (max-width: 1100px) { .circle-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 700px) {
-  .topbar, .resume-footer { flex-direction: column; align-items: stretch; }
-  .circle-grid { grid-template-columns: 1fr; }
-}
-@media print {
-  .timeline-details { display: block !important; }
-  .competency-category, .circle-skill { break-inside: avoid; page-break-inside: avoid; }
-}
 
-/* Portfolio v2: vision, evidence, and growth */
+
+/* =========================================================
+   VISION, EVIDENCE & PROFESSIONAL GROWTH
+   ========================================================= */
 .vision-section,
 .growth-section {
   margin: 30px 0;
@@ -504,11 +629,11 @@ button { font: inherit; }
 @media (max-width: 850px) {
   .vision-grid { grid-template-columns: 1fr; }
 }
-@media print {
-  .vision-card, .growth-panel { break-inside: avoid; page-break-inside: avoid; }
-}
 
-/* v3: separate portfolio and compact ATS print views */
+
+/* =========================================================
+   PRINT CONTROLS & EVIDENCE COMPONENTS
+   ========================================================= */
 .print-only { display: none; }
 .variant-control {
   display: inline-flex;
@@ -543,43 +668,10 @@ button { font: inherit; }
 .evidence-card strong { color: var(--primary-dark); }
 .evidence-card p { margin: 7px 0 0; color: var(--muted); line-height: 1.45; font-size: .88rem; }
 
-@media (max-width: 700px) {
-  .evidence-grid { grid-template-columns: 1fr; }
-  .variant-control { width: 100%; justify-content: space-between; }
-}
 
-@media print {
-  @page { size: A4; margin: 11mm 12mm; }
-  body { background: #fff !important; color: #182a36; font-size: 9.2pt; }
-  .screen-only, .no-print { display: none !important; }
-  .print-only { display: block !important; }
-  .page-shell { width: 100%; margin: 0; }
-  .print-cv { font-family: Arial, Helvetica, sans-serif; line-height: 1.32; }
-  .print-header { border-bottom: 1.5px solid #2b5f8d; padding-bottom: 6px; margin-bottom: 8px; }
-  .print-header h1 { margin: 0; font-size: 18pt; color: #153042; letter-spacing: .01em; }
-  .print-headline { margin: 2px 0; font-size: 10.5pt; font-weight: 700; color: #2b5f8d; }
-  .print-role-family { margin: 0 0 4px; font-size: 8.7pt; color: #4f6877; }
-  .print-contact { display: flex; flex-wrap: wrap; gap: 5px 12px; color: #526873; font-size: 8pt; }
-  .print-contact span:not(:last-child)::after { content: '  |'; margin-left: 10px; color: #9aabb4; }
-  .print-section { margin: 7px 0; }
-  .print-section h2 { margin: 0 0 4px; padding-bottom: 2px; border-bottom: 1px solid #cad9e2; color: #2b5f8d; font-size: 10.2pt; text-transform: uppercase; letter-spacing: .06em; }
-  .print-profile p, .print-skills { margin: 0; }
-  .print-job { break-inside: avoid; page-break-inside: avoid; margin-bottom: 6px; }
-  .print-job-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
-  .print-job-head h3 { margin: 0; font-size: 9.7pt; }
-  .print-job-head strong { display: block; color: #36586d; font-size: 8.8pt; }
-  .print-job-head > span { white-space: nowrap; color: #617784; font-size: 8.2pt; }
-  .print-job ul { margin: 3px 0 2px; padding-left: 15px; }
-  .print-job li { margin-bottom: 1.5px; }
-  .print-stack { margin: 2px 0 0; color: #496575; font-size: 7.7pt; font-weight: 600; }
-  .print-two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; break-inside: avoid; }
-  .print-compact-item { margin-bottom: 4px; break-inside: avoid; }
-  .print-compact-item strong, .print-compact-item span { display: block; }
-  .print-compact-item strong { font-size: 8.5pt; }
-  .print-compact-item span { color: #607583; font-size: 7.8pt; }
-}
-
-/* v4: modular screen views */
+/* =========================================================
+   MODULAR WEB VIEWS
+   ========================================================= */
 .quick-nav button {
   border: 1px solid rgba(63,120,167,.14);
   background: rgba(255,255,255,.8);
@@ -656,4 +748,155 @@ button { font: inherit; }
   .view-card-grid,
   .education-view-grid,
   .certification-view-grid { grid-template-columns: 1fr; }
+}
+
+/* =========================================================
+   CAREER EVOLUTION
+   Same visual language as professional experience
+   ========================================================= */
+
+.career-evolution-intro {
+  margin: 0 0 28px;
+  padding: 22px;
+
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--soft);
+}
+
+.career-evolution-intro .eyebrow {
+  margin: 0 0 16px;
+
+  color: var(--primary-dark);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.career-evolution-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
+  margin: 0;
+}
+
+.career-evolution-step {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 42px;
+  padding: 10px 14px;
+
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #ffffff;
+
+  color: var(--primary-dark);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.career-evolution-arrow {
+  display: inline-flex;
+  align-items: center;
+
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+.resume,
+  .split-section,
+  .platform-grid,
+  .project-chip-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-highlight-grid { grid-template-columns: 1fr; }
+
+.circle-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 700px) {
+.topbar, .resume-footer { flex-direction: column; align-items: stretch; }
+  .circle-grid { grid-template-columns: 1fr; }
+
+.evidence-grid { grid-template-columns: 1fr; }
+  .variant-control { width: 100%; justify-content: space-between; }
+}
+
+/* =========================================================
+   PRINT
+   Web and print layouts intentionally remain independent.
+   ========================================================= */
+
+@media print {
+body { background: white; }
+  .no-print { display: none !important; }
+  .page-shell { width: 100%; margin: 0; }
+  .resume { box-shadow: none; border-radius: 0; }
+  .timeline-item, .platform-card, .mini-card, .hero-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+.timeline-details { display: block !important; }
+  .competency-category, .circle-skill { break-inside: avoid; page-break-inside: avoid; }
+
+.vision-card, .growth-panel { break-inside: avoid; page-break-inside: avoid; }
+
+@page { size: A4; margin: 11mm 12mm; }
+  body { background: #fff !important; color: #182a36; font-size: 9.2pt; }
+  .screen-only, .no-print { display: none !important; }
+  .print-only { display: block !important; }
+  .page-shell { width: 100%; margin: 0; }
+  .print-cv { font-family: Arial, Helvetica, sans-serif; line-height: 1.32; }
+  .print-header { border-bottom: 1.5px solid #2b5f8d; padding-bottom: 6px; margin-bottom: 8px; }
+  .print-header h1 { margin: 0; font-size: 18pt; color: #153042; letter-spacing: .01em; }
+  .print-headline { margin: 2px 0; font-size: 10.5pt; font-weight: 700; color: #2b5f8d; }
+  .print-role-family { margin: 0 0 4px; font-size: 8.7pt; color: #4f6877; }
+  .print-contact { display: flex; flex-wrap: wrap; gap: 5px 12px; color: #526873; font-size: 8pt; }
+  .print-contact span:not(:last-child)::after { content: '  |'; margin-left: 10px; color: #9aabb4; }
+  .print-section { margin: 7px 0; }
+  .print-section h2 { margin: 0 0 4px; padding-bottom: 2px; border-bottom: 1px solid #cad9e2; color: #2b5f8d; font-size: 10.2pt; text-transform: uppercase; letter-spacing: .06em; }
+  .print-profile p, .print-skills { margin: 0; }
+  .print-job { break-inside: avoid; page-break-inside: avoid; margin-bottom: 6px; }
+  .print-job-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+  .print-job-head h3 { margin: 0; font-size: 9.7pt; }
+  .print-job-head strong { display: block; color: #36586d; font-size: 8.8pt; }
+  .print-job-head > span { white-space: nowrap; color: #617784; font-size: 8.2pt; }
+  .print-job ul { margin: 3px 0 2px; padding-left: 15px; }
+  .print-job li { margin-bottom: 1.5px; }
+  .print-stack { margin: 2px 0 0; color: #496575; font-size: 7.7pt; font-weight: 600; }
+  .print-two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; break-inside: avoid; }
+  .print-compact-item { margin-bottom: 4px; break-inside: avoid; }
+  .print-compact-item strong, .print-compact-item span { display: block; }
+  .print-compact-item strong { font-size: 8.5pt; }
+  .print-compact-item span { color: #607583; font-size: 7.8pt; }
+
+html,
+  body,
+  #root {
+    height: auto !important;
+  }
+
+  body {
+    overflow: visible !important;
+  }
+
+  .page-shell,
+  .resume,
+  .sidebar,
+  .content {
+    height: auto !important;
+    overflow: visible !important;
+  }
 }

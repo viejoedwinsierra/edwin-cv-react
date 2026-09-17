@@ -5,11 +5,11 @@ import { WebCvView } from './views/WebCvView';
 import { PrintCvView } from './views/PrintCvView';
 import { getPrintCv } from './selectors/cvSelectors';
 
-const validViews = new Set(['profile', 'experience', 'projects', 'skills', 'education', 'certifications']);
+const validViews = new Set(['experience', 'projects', 'skills', 'education', 'certifications']);
 
 function getInitialView() {
   const hash = window.location.hash.replace('#/', '').replace('#', '');
-  return validViews.has(hash) ? hash : 'profile';
+  return validViews.has(hash) ? hash : 'experience';
 }
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
     if (!validViews.has(view)) return;
     setActiveView(view);
     window.history.replaceState(null, '', `#/${view}`);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelector('.web-cv .content')?.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -38,8 +38,6 @@ function App() {
       <TopBar
         lang={lang}
         meta={cv.meta}
-        linkedin={cv.profile.linkedin}
-        github={cv.profile.github}
         activeView={activeView}
         onNavigate={navigate}
         variant={variant}
@@ -47,8 +45,7 @@ function App() {
         onToggleLanguage={() => setLang((current) => current === 'es' ? 'en' : 'es')}
         onPrint={() => window.print()}
       />
-
-      <WebCvView cv={cv} lang={lang} activeView={activeView} onNavigate={navigate} openJobs={openJobs} onToggleJob={toggleJob} />
+      <WebCvView cv={cv} lang={lang} activeView={activeView} openJobs={openJobs} onToggleJob={toggleJob} />
       <PrintCvView cv={printCv} lang={lang} />
     </div>
   );

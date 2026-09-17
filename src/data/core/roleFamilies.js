@@ -25,3 +25,26 @@ export const roleFamilies = {
     certificationDomains: ['enterprise-applications', 'security', 'networking']
   }
 };
+export const targetRoles = {
+  es: [
+    'Especialista de Servicios TI',
+    'Especialista Senior de Aplicaciones',
+    'Backend / Software Engineer',
+    'Cloud / DevOps Engineer',
+    'Data Engineer',
+    'DBA / Database Engineer',
+    'Solutions / Cloud Architect',
+    'Technical Lead'
+  ],
+
+  en: [
+    'IT Services Specialist',
+    'Senior Applications Specialist',
+    'Backend / Software Engineer',
+    'Cloud / DevOps Engineer',
+    'Data Engineer',
+    'DBA / Database Engineer',
+    'Solutions / Cloud Architect',
+    'Technical Lead'
+  ]
+};
