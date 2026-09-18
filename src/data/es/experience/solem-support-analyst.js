@@ -1,20 +1,41 @@
 export const solemSupportAnalyst = {
-  "role": "Support Analyst Engineer",
+  "role": "Ingeniero Analista de Soporte",
   "company": "SOLEM",
   "period": "Abr 2018 – Oct 2018",
   "location": "Bogotá, Colombia",
   "points": [
-    "Monitoreé y soporté la aplicación bancaria para pymes utilizada por Grupo Aval a través de ATH.",
-    "Soporté integraciones entre Banco de Bogotá, Banco Popular, AV Villas, Banco de Occidente y servicios ATH.",
-    "Diagnostiqué incidentes de transacciones financieras en aplicaciones Java, realizando análisis y consultas SQL sobre bases de datos Oracle, y coordiné su resolución con equipos de desarrollo mediante JIRA."
+    "Brindé soporte avanzado a la plataforma de banca empresarial/PYMES utilizada por los cuatro bancos de Grupo Aval: Banco de Bogotá, Banco Popular, AV Villas y Banco de Occidente, integrada a través de servicios de ATH.",
+    "Participé en un esquema de soporte 7x24 para mantener la continuidad operativa de la plataforma, atendiendo solicitudes e incidentes escalados desde la mesa de servicio.",
+    "Realicé análisis técnico sobre la aplicación Java, bases de datos Oracle e integraciones para identificar el origen de las fallas y apoyar su resolución.",
+    "Utilicé SQL de forma intensiva para consultar y analizar información de clientes, transacciones y procesos de la plataforma, apoyando el diagnóstico y la validación de incidentes.",
+    "Soporté funcionalidades de banca empresarial como pagos masivos mediante archivos, movimientos ACH y administración de permisos, roles y perfiles definidos de acuerdo con las directrices de cada banco.",
+    "Analicé el flujo de información entre los buses de integración de Banco de Bogotá, Banco Popular, AV Villas y Banco de Occidente y el bus de ATH, revisando servicios e intercambios basados en SOAP para localizar fallas en el procesamiento e integración de operaciones.",
+    "Documenté hallazgos y, cuando el análisis requería intervención o corrección por parte de desarrollo, registré y gestioné los casos correspondientes mediante JIRA.",
+    "Acompañé ventanas de despliegue de nuevas versiones y cambios de la plataforma, realizando seguimiento técnico y validaciones para detectar y atender posibles afectaciones al servicio.",
+    "Trabajé como un nivel de soporte superior a la mesa que atendía directamente a los clientes, combinando análisis funcional, SQL, troubleshooting de aplicaciones e integración de servicios."
   ],
   "stack": [
+    "Application Support",
+    "L2/L3 Support",
+    "24x7 Support",
+    "Production Support",
+    "Deployment Support",
+    "Operational Continuity",
     "Java",
     "Oracle",
     "SQL",
-    "Application Support",
+    "SOAP",
+    "Web Services",
     "JIRA",
+    "Banking",
+    "SME Banking",
+    "ACH",
+    "Bulk Payments",
+    "Roles & Permissions",
     "Service Integration",
-    "Banking"
+    "Integration Buses",
+    "ATH",
+    "Incident Management",
+    "Troubleshooting"
   ]
 };

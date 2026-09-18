@@ -4,17 +4,38 @@ export const solemSupportAnalyst = {
   "period": "Apr 2018 – Oct 2018",
   "location": "Bogotá, Colombia",
   "points": [
-    "Monitored and supported the SME banking application used by Grupo Aval through ATH.",
-    "Supported integrations across Banco de Bogotá, Banco Popular, AV Villas, Banco de Occidente, and ATH services.",
-    "Diagnosed financial transaction incidents in Java applications, using SQL queries and analysis on Oracle databases, and coordinated resolution with development teams through JIRA."
+    "Provided advanced support for the corporate/SME banking platform used by Grupo Aval's four banks: Banco de Bogotá, Banco Popular, AV Villas, and Banco de Occidente, integrated through ATH services.",
+    "Participated in a 24x7 support model to maintain platform operational continuity, handling requests and incidents escalated from the service desk.",
+    "Performed technical analysis across the Java application, Oracle databases, and integrations to identify failure points and support resolution.",
+    "Used SQL extensively to query and analyze customer, transaction, and platform-process information, supporting incident diagnosis and validation.",
+    "Supported corporate banking capabilities including bulk payments through files, ACH transactions, and administration of permissions, roles, and profiles according to each bank's guidelines.",
+    "Analyzed information flows across the integration buses of Banco de Bogotá, Banco Popular, AV Villas, and Banco de Occidente and the ATH bus, reviewing SOAP-based services and exchanges to locate failures in transaction processing and service integration.",
+    "Documented findings and, when analysis required development intervention or a software correction, created and managed the corresponding cases through JIRA.",
+    "Supported deployment windows for new releases and platform changes, performing technical monitoring and validations to identify and address potential service impacts.",
+    "Worked as an advanced support level above the customer-facing service desk, combining functional analysis, SQL, application troubleshooting, and service-integration analysis."
   ],
   "stack": [
+    "Application Support",
+    "L2/L3 Support",
+    "24x7 Support",
+    "Production Support",
+    "Deployment Support",
+    "Operational Continuity",
     "Java",
     "Oracle",
     "SQL",
-    "Application Support",
+    "SOAP",
+    "Web Services",
     "JIRA",
+    "Banking",
+    "SME Banking",
+    "ACH",
+    "Bulk Payments",
+    "Roles & Permissions",
     "Service Integration",
-    "Banking"
+    "Integration Buses",
+    "ATH",
+    "Incident Management",
+    "Troubleshooting"
   ]
 };
