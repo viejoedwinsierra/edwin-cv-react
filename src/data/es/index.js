@@ -3,7 +3,7 @@ import { profile } from './profile.js';
 import { skills } from './skills.js';
 import { competencies } from './competencies.js';
 import { platforms } from './platforms.js';
-import { supportedProjects } from './projects.js';
+import { supportedProjects, projectDetails } from './projects.js';
 import { experience } from './experience.js';
 import { education } from './education.js';
 import { certifications } from './certifications.js';
@@ -17,6 +17,7 @@ export const esContent = {
   competencies,
   platforms,
   supportedProjects,
+  projectDetails,
   experience,
   education,
   certifications,
