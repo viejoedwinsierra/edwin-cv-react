@@ -166,4 +166,43 @@ export const projectDetails = [
     stack: ["SAP", "SuccessFactors", "APIs", "VPN"],
     tags: ["enterprise-integration", "hr-systems", "api"]
   }
+  ,{
+    id: "automated-offer-validator",
+    experienceId: "movistar-configuration-specialist",
+    title: "Validador automático de ofertas comerciales",
+    summary: "Automatización para validar integralmente la configuración de ofertas antes de su liberación a producción.",
+    points: [
+      "Desarrollé un validador automático para verificar la consistencia de configuraciones comerciales antes de su liberación.",
+      "La solución apoyaba la validación integral entre plataformas y contribuía a reducir errores de configuración.",
+      "Utilicé automatización y análisis de datos para fortalecer las validaciones previas a producción."
+    ],
+    stack: ["Python", "SQL", "Excel", "VBA", "CRM", "CBS", "Ericsson Altamira"],
+    tags: ["automation", "validation", "billing", "telecommunications"]
+  },
+  {
+    id: "integrated-rent-calculator",
+    experienceId: "movistar-configuration-specialist",
+    title: "Calculador de rentas integradas",
+    summary: "Automatización para calcular rentas de servicios fijos y móviles considerando variaciones tarifarias e impuestos.",
+    points: [
+      "Desarrollé un calculador de rentas integradas para servicios fijos y móviles.",
+      "La solución contemplaba variaciones de precio por estrato y discriminación de impuestos.",
+      "Fue utilizado como apoyo para alzas tarifarias y cambios asociados con UVT."
+    ],
+    stack: ["Python", "Excel", "VBA", "SQL", "Billing"],
+    tags: ["automation", "billing", "pricing", "data"]
+  },
+  {
+    id: "601-dialing-scheme",
+    experienceId: "movistar-configuration-specialist",
+    title: "Preparación del esquema de marcación 601",
+    summary: "Análisis de reglas de numeración y preparación de cambios en Ericsson Altamira asociados con la implementación del esquema de marcación 601.",
+    points: [
+      "Realicé análisis e investigación de las reglas de numeración configuradas en Ericsson Altamira.",
+      "Participé en la preparación de los cambios requeridos para soportar la implementación del esquema de marcación 601."
+    ],
+    stack: ["Ericsson Altamira", "Numbering Rules", "Commercial Configuration"],
+    tags: ["telecommunications", "configuration", "numbering"]
+  }
+
 ];

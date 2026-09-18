@@ -6,16 +6,11 @@ export const movistarConfigurationSpecialist = {
   "points": [
     "Configured commercial offers, pricing models, tariffs, discounts, promotions, charging rules, and billing parameters across CRM, CBS, and Ericsson Altamira platforms for prepaid services.",
     "Implemented parameters related to taxes, billing cycles, minimum-wage updates, UVT changes, and consumption tax according to regulatory and business requirements, including charging-platform and accounting-account configurations.",
-    "Configured rating decision trees, USSD services for offer availability and package purchases, Mi Movistar capabilities, and content-charging platforms.",
-    "Performed analysis and research on numbering rules in Ericsson Altamira as part of the changes required for the implementation of the 601 dialing scheme.",
-    "Worked with integrations and synchronization across CRM, CBS, and convergent mediation, ensuring correct replication of offers and commercial parameters into charging and billing processes.",
-    "Performed controlled database analysis and corrections using SQL, including automated SELECT, INSERT, UPDATE, and DELETE operations for validations, regularizations, and large-scale customer adjustments.",
-    "Developed Python scripts and Excel VBA automations to analyze large customer populations, calculate adjustments, reduce manual effort, and improve operational-process reliability.",
-    "Developed an automated offer validator to verify end-to-end configuration consistency before release, reducing configuration errors and improving cross-platform validation.",
-    "Developed an integrated-rent calculator for fixed and mobile services, accounting for price variations by socioeconomic stratum and tax breakdowns to support tariff increases and UVT-related changes.",
-    "Performed XML analysis, affected-order traceability, cache-cleaning activities, and synchronization/replication validation across platforms during incident and change handling.",
-    "Participated in a monthly 24x7 on-call rotation to handle production incidents, urgent changes, and events affecting the continuity of commercial and billing services.",
-    "Worked closely with Business Intelligence teams to monitor through KPIs and reporting the impact of configurations, commercial offers, and tariff changes on sales, product adoption, and customer behavior.",
+    "Configured rating decision trees, USSD services, Mi Movistar capabilities, and content-charging platforms while working with integrations and synchronization across CRM, CBS, and convergent mediation.",
+    "Performed controlled database analysis, validation, and corrections using SQL and developed Python, Excel, and VBA automations for large-scale customer analysis, regularizations, and reduction of manual activities.",
+    "Performed XML analysis, order traceability, synchronization and replication validation, and technical support activities during incidents and changes affecting commercial and billing platforms.",
+    "Participated in a monthly 24x7 on-call rotation to handle production incidents, urgent changes, and events affecting service continuity.",
+    "Worked with Business Intelligence teams using KPIs and reporting to analyze the impact of configurations, commercial offers, and tariff changes on sales, product adoption, and customer behavior.",
     "Validated and certified new products and commercial changes before production, collaborating with Business, QA, CRM, Billing, Development, and Production Support teams."
   ],
   "stack": [

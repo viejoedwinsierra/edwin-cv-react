@@ -166,4 +166,43 @@ export const projectDetails = [
     stack: ["SAP", "SuccessFactors", "APIs", "VPN"],
     tags: ["enterprise-integration", "hr-systems", "api"]
   }
+  ,{
+    id: "automated-offer-validator",
+    experienceId: "movistar-configuration-specialist",
+    title: "Automated Commercial Offer Validator",
+    summary: "Automation designed to validate end-to-end commercial offer configuration before production release.",
+    points: [
+      "Developed an automated validator to verify the consistency of commercial configurations before release.",
+      "The solution supported end-to-end validation across platforms and helped reduce configuration errors.",
+      "Used automation and data analysis to strengthen pre-production validation activities."
+    ],
+    stack: ["Python", "SQL", "Excel", "VBA", "CRM", "CBS", "Ericsson Altamira"],
+    tags: ["automation", "validation", "billing", "telecommunications"]
+  },
+  {
+    id: "integrated-rent-calculator",
+    experienceId: "movistar-configuration-specialist",
+    title: "Integrated Rent Calculator",
+    summary: "Automation for calculating fixed and mobile service charges while considering tariff variations and taxes.",
+    points: [
+      "Developed an integrated-rent calculator for fixed and mobile services.",
+      "The solution accounted for price variations by socioeconomic stratum and tax breakdowns.",
+      "It supported tariff increases and changes associated with UVT."
+    ],
+    stack: ["Python", "Excel", "VBA", "SQL", "Billing"],
+    tags: ["automation", "billing", "pricing", "data"]
+  },
+  {
+    id: "601-dialing-scheme",
+    experienceId: "movistar-configuration-specialist",
+    title: "601 Dialing Scheme Preparation",
+    summary: "Analysis of numbering rules and preparation of Ericsson Altamira changes associated with implementation of the 601 dialing scheme.",
+    points: [
+      "Analyzed and researched numbering rules configured in Ericsson Altamira.",
+      "Participated in preparing the changes required to support implementation of the 601 dialing scheme."
+    ],
+    stack: ["Ericsson Altamira", "Numbering Rules", "Commercial Configuration"],
+    tags: ["telecommunications", "configuration", "numbering"]
+  }
+
 ];
