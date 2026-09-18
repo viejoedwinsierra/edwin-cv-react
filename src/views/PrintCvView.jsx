@@ -25,6 +25,19 @@ function ContactLine({ cv }) {
   );
 }
 
+function PrintCapabilities({ domains }) {
+  return (
+    <div className="print-capabilities">
+      {domains.map((domain) => (
+        <div className="print-capability-row" key={domain.id}>
+          <strong>{domain.label}</strong>
+          <span>{domain.skills.join(' · ')}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function PrintExperience({ experience }) {
   return (
     <>
@@ -47,13 +60,30 @@ function PrintExperience({ experience }) {
               <li key={point}>{point}</li>
             ))}
           </ul>
-
-          <p className="print-stack">
-            {item.stack.join(' · ')}
-          </p>
         </article>
       ))}
     </>
+  );
+}
+
+function PrintProjects({ projects, technologiesLabel }) {
+  return (
+    <div className="print-project-grid">
+      {projects.map((project) => (
+        <article
+          className="print-project"
+          key={project.id ?? project.title}
+        >
+          <h3>{project.title}</h3>
+          {project.stack?.length > 0 && (
+            <p>
+              <strong>{technologiesLabel}:</strong>{' '}
+              {project.stack.join(' · ')}
+            </p>
+          )}
+        </article>
+      ))}
+    </div>
   );
 }
 
@@ -64,6 +94,8 @@ export function PrintCvView({ cv, lang }) {
           profile: 'Perfil profesional',
           experience: 'Experiencia profesional',
           skills: 'Capacidades técnicas',
+          projects: 'Proyectos',
+          technologies: 'Tecnologías',
           education: 'Formación',
           certs: 'Certificaciones seleccionadas'
         }
@@ -71,6 +103,8 @@ export function PrintCvView({ cv, lang }) {
           profile: 'Professional profile',
           experience: 'Professional experience',
           skills: 'Technical capabilities',
+          projects: 'Projects',
+          technologies: 'Technologies',
           education: 'Education',
           certs: 'Selected certifications'
         };
@@ -108,14 +142,20 @@ export function PrintCvView({ cv, lang }) {
 
       <section className="print-section">
         <h2>{labels.skills}</h2>
-        <p className="print-skills">
-          {cv.skills.join(' · ')}
-        </p>
+        <PrintCapabilities domains={cv.capabilityDomains ?? []} />
       </section>
 
       <section className="print-section">
         <h2>{labels.experience}</h2>
         <PrintExperience experience={cv.experience} />
+      </section>
+
+      <section className="print-section print-projects-section">
+        <h2>{labels.projects}</h2>
+        <PrintProjects
+          projects={cv.projectDetails ?? []}
+          technologiesLabel={labels.technologies}
+        />
       </section>
 
       <div className="print-two-columns">
