@@ -4,13 +4,10 @@ export const pathKpiDataAnalyst = {
   "period": "Jun 2016 – Jul 2017",
   "location": "Colombia",
   "points": [
-    "Monitored Claro's mobile network performance and supported nationwide 4G/LTE rollout tracking by analyzing operational and performance KPIs across 2G/GSM, 3G/UMTS, and 4G/LTE technologies.",
-    "Worked with information associated with radio access and Core network elements such as BTS/BSC, NodeB/RNC, MSC/HLR, SGSN/GGSN, eNodeB, and EPC components including MME, S-GW, P-GW, and HSS as part of network performance and technology-evolution analysis.",
-    "Queried and extracted information from network management platforms such as Nokia NetAct and Huawei U2000, using SQL to consolidate, transform, and monitor performance data and KPIs.",
-    "Developed automated georeferencing calculations to identify areas affected by interference, channel-related issues, coverage problems, and performance degradation, supporting technical analysis and optimization prioritization.",
-    "Automated follow-up reporting in Excel using VBA, including automatic generation of PowerPoint presentations to communicate network performance results and KPI trends.",
-    "Built Business Intelligence dashboards and reports using Power BI, Excel, and Microsoft Access to visualize trends, degradations, KPI evolution, and network behavior.",
-    "Combined data analysis, automation, and visualization to reduce manual reporting effort and improve operational monitoring of network rollout and performance."
+    "Monitored Claro's mobile network performance through operational and performance KPI analysis across 2G/GSM, 3G/UMTS, and 4G/LTE technologies, supporting network rollout and technology-evolution tracking.",
+    "Worked with radio access and Core network information covering BTS/BSC, NodeB/RNC, MSC/HLR, SGSN/GGSN, eNodeB, and EPC components including MME, S-GW, P-GW, and HSS to analyze network performance and behavior.",
+    "Queried and extracted information from Nokia NetAct and Huawei U2000, using SQL to consolidate, transform, and monitor performance data and KPIs.",
+    "Combined data analysis, georeferencing, automation, and Business Intelligence using Excel, VBA, Power BI, Microsoft Access, and PowerPoint to reduce manual reporting effort, identify degradations, and communicate network-performance results."
   ],
   "stack": [
     "SQL",

@@ -4,13 +4,10 @@ export const pathKpiDataAnalyst = {
   "period": "Jun 2016 – Jul 2017",
   "location": "Colombia",
   "points": [
-    "Monitoreé el desempeño de la red móvil de Claro y apoyé el seguimiento del despliegue de 4G/LTE en Colombia, analizando KPIs operativos y de performance sobre tecnologías 2G/GSM, 3G/UMTS y 4G/LTE.",
-    "Trabajé con información asociada a elementos de acceso y Core de red como BTS/BSC, NodeB/RNC, MSC/HLR, SGSN/GGSN, eNodeB y EPC, incluyendo MME, S-GW, P-GW y HSS, como parte del análisis de desempeño y evolución tecnológica de la red.",
-    "Consulté y extraje información desde plataformas de gestión de red como Nokia NetAct y Huawei U2000, complementando el análisis con SQL para consolidar, transformar y dar seguimiento a datos de performance y KPIs.",
-    "Desarrollé cálculos automatizados de georreferenciación para identificar zonas con problemas de interferencia, canal, cobertura y desempeño, apoyando el análisis técnico de la red y la priorización de acciones de optimización.",
-    "Automaticé reportes de seguimiento en Excel mediante VBA, incluyendo la generación automática de presentaciones en PowerPoint para comunicar resultados de performance y evolución de KPIs.",
-    "Construí tableros e informes de Business Intelligence mediante Power BI, Excel y Microsoft Access para visualizar tendencias, degradaciones, evolución de indicadores y comportamiento de la red.",
-    "Integré análisis de datos, automatización y visualización para reducir trabajo manual en la reportería y facilitar el seguimiento operativo del despliegue y desempeño de la red."
+    "Monitoreé el desempeño de la red móvil de Claro mediante análisis de KPIs operativos y de performance sobre tecnologías 2G/GSM, 3G/UMTS y 4G/LTE, apoyando el seguimiento de la evolución y despliegue de la red.",
+    "Trabajé con información de elementos de acceso y Core como BTS/BSC, NodeB/RNC, MSC/HLR, SGSN/GGSN, eNodeB y EPC, incluyendo MME, S-GW, P-GW y HSS, para análisis de desempeño y comportamiento de la red.",
+    "Consulté y extraje información desde Nokia NetAct y Huawei U2000, utilizando SQL para consolidar, transformar y dar seguimiento a datos de performance y KPIs.",
+    "Integré análisis de datos, georreferenciación, automatización y Business Intelligence mediante Excel, VBA, Power BI, Microsoft Access y PowerPoint para reducir trabajo manual, identificar degradaciones y comunicar resultados de desempeño de la red."
   ],
   "stack": [
     "SQL",

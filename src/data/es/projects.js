@@ -221,4 +221,20 @@ export const projectDetails = [
     tags: ["banking", "application-support", "enterprise-integration", "production-support"]
   }
 
+  ,{
+    id: "claro-4g-kpi-monitoring-automation",
+    experienceId: "path-kpi-data-analyst",
+    title: "Seguimiento del despliegue 4G/LTE y automatización de KPIs",
+    summary: "Análisis y automatización para apoyar el seguimiento del despliegue 4G/LTE de Claro y el desempeño de la red móvil en Colombia.",
+    points: [
+      "Apoyé el seguimiento del despliegue 4G/LTE mediante análisis de KPIs sobre tecnologías 2G/GSM, 3G/UMTS y 4G/LTE.",
+      "Desarrollé cálculos automatizados de georreferenciación para identificar zonas con interferencia, problemas de canal, cobertura y degradaciones de desempeño.",
+      "Automaticé reportes de seguimiento en Excel mediante VBA, incluyendo la generación automática de presentaciones en PowerPoint para comunicar resultados y evolución de KPIs.",
+      "Construí tableros e informes con Power BI, Excel y Microsoft Access para visualizar tendencias, degradaciones y comportamiento de la red.",
+      "Combiné SQL, datos de Nokia NetAct y Huawei U2000, automatización y visualización para reducir trabajo manual y facilitar el seguimiento operativo de la red."
+    ],
+    stack: ["SQL", "Nokia NetAct", "Huawei U2000", "4G/LTE", "Network KPIs", "Georeferencing", "Excel", "VBA", "PowerPoint", "Power BI", "Microsoft Access"],
+    tags: ["telecommunications", "data-analysis", "network-performance", "automation", "business-intelligence"]
+  }
+
 ];
