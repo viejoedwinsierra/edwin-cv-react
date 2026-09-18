@@ -4,15 +4,12 @@ export const solemSupportAnalyst = {
   "period": "Abr 2018 – Oct 2018",
   "location": "Bogotá, Colombia",
   "points": [
-    "Brindé soporte avanzado a la plataforma de banca empresarial/PYMES utilizada por los cuatro bancos de Grupo Aval: Banco de Bogotá, Banco Popular, AV Villas y Banco de Occidente, integrada a través de servicios de ATH.",
-    "Participé en un esquema de soporte 7x24 para mantener la continuidad operativa de la plataforma, atendiendo solicitudes e incidentes escalados desde la mesa de servicio.",
-    "Realicé análisis técnico sobre la aplicación Java, bases de datos Oracle e integraciones para identificar el origen de las fallas y apoyar su resolución.",
-    "Utilicé SQL de forma intensiva para consultar y analizar información de clientes, transacciones y procesos de la plataforma, apoyando el diagnóstico y la validación de incidentes.",
-    "Soporté funcionalidades de banca empresarial como pagos masivos mediante archivos, movimientos ACH y administración de permisos, roles y perfiles definidos de acuerdo con las directrices de cada banco.",
-    "Analicé el flujo de información entre los buses de integración de Banco de Bogotá, Banco Popular, AV Villas y Banco de Occidente y el bus de ATH, revisando servicios e intercambios basados en SOAP para localizar fallas en el procesamiento e integración de operaciones.",
-    "Documenté hallazgos y, cuando el análisis requería intervención o corrección por parte de desarrollo, registré y gestioné los casos correspondientes mediante JIRA.",
-    "Acompañé ventanas de despliegue de nuevas versiones y cambios de la plataforma, realizando seguimiento técnico y validaciones para detectar y atender posibles afectaciones al servicio.",
-    "Trabajé como un nivel de soporte superior a la mesa que atendía directamente a los clientes, combinando análisis funcional, SQL, troubleshooting de aplicaciones e integración de servicios."
+    "Brindé soporte avanzado L2/L3 a la plataforma de banca empresarial/PYMES utilizada por Banco de Bogotá, Banco Popular, AV Villas y Banco de Occidente, integrada mediante servicios de ATH y operada bajo un esquema de soporte 7x24.",
+    "Realicé troubleshooting técnico sobre aplicaciones Java, bases de datos Oracle y procesos transaccionales, utilizando SQL para analizar clientes, transacciones y comportamiento de la plataforma durante incidentes y validaciones.",
+    "Analicé integraciones y flujos de información entre los buses de los bancos y ATH, revisando servicios SOAP y Web Services para localizar fallas en el procesamiento de operaciones.",
+    "Soporté funcionalidades de banca empresarial como pagos masivos mediante archivos, transacciones ACH y administración de permisos, roles y perfiles definidos por cada banco.",
+    "Documenté hallazgos técnicos y gestioné mediante JIRA los casos que requerían intervención de desarrollo o correcciones de software.",
+    "Acompañé ventanas de despliegue, cambios y nuevas versiones, realizando seguimiento técnico, validaciones y soporte productivo para preservar la continuidad operativa del servicio."
   ],
   "stack": [
     "Application Support",

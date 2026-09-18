@@ -205,4 +205,20 @@ export const projectDetails = [
     tags: ["telecommunications", "configuration", "numbering"]
   }
 
+  ,{
+    id: "grupo-aval-sme-banking-ath",
+    experienceId: "solem-support-analyst",
+    title: "Plataforma de banca empresarial/PYMES Grupo Aval e integraciones ATH",
+    summary: "Soporte avanzado e integración de una plataforma bancaria utilizada por los cuatro bancos de Grupo Aval a través de servicios ATH.",
+    points: [
+      "Brindé soporte avanzado a la plataforma utilizada por Banco de Bogotá, Banco Popular, AV Villas y Banco de Occidente.",
+      "Analicé flujos de información entre los buses de integración de los bancos y ATH, revisando servicios SOAP para localizar fallas en el procesamiento de operaciones.",
+      "Soporté pagos masivos mediante archivos, transacciones ACH y administración de permisos, roles y perfiles definidos por cada banco.",
+      "Utilicé Java, Oracle y SQL para diagnóstico de incidentes, validación de transacciones y análisis de información de clientes y procesos de la plataforma.",
+      "Acompañé despliegues y cambios de la solución, realizando validaciones técnicas y seguimiento para preservar la continuidad operativa."
+    ],
+    stack: ["Java", "Oracle", "SQL", "SOAP", "Web Services", "ATH", "ACH", "JIRA", "Integration Buses"],
+    tags: ["banking", "application-support", "enterprise-integration", "production-support"]
+  }
+
 ];

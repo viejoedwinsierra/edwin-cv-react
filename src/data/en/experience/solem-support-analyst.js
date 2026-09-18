@@ -4,15 +4,12 @@ export const solemSupportAnalyst = {
   "period": "Apr 2018 – Oct 2018",
   "location": "Bogotá, Colombia",
   "points": [
-    "Provided advanced support for the corporate/SME banking platform used by Grupo Aval's four banks: Banco de Bogotá, Banco Popular, AV Villas, and Banco de Occidente, integrated through ATH services.",
-    "Participated in a 24x7 support model to maintain platform operational continuity, handling requests and incidents escalated from the service desk.",
-    "Performed technical analysis across the Java application, Oracle databases, and integrations to identify failure points and support resolution.",
-    "Used SQL extensively to query and analyze customer, transaction, and platform-process information, supporting incident diagnosis and validation.",
-    "Supported corporate banking capabilities including bulk payments through files, ACH transactions, and administration of permissions, roles, and profiles according to each bank's guidelines.",
-    "Analyzed information flows across the integration buses of Banco de Bogotá, Banco Popular, AV Villas, and Banco de Occidente and the ATH bus, reviewing SOAP-based services and exchanges to locate failures in transaction processing and service integration.",
-    "Documented findings and, when analysis required development intervention or a software correction, created and managed the corresponding cases through JIRA.",
-    "Supported deployment windows for new releases and platform changes, performing technical monitoring and validations to identify and address potential service impacts.",
-    "Worked as an advanced support level above the customer-facing service desk, combining functional analysis, SQL, application troubleshooting, and service-integration analysis."
+    "Provided advanced L2/L3 support for the corporate/SME banking platform used by Banco de Bogotá, Banco Popular, AV Villas, and Banco de Occidente, integrated through ATH services and operated under a 24x7 support model.",
+    "Performed technical troubleshooting across Java applications, Oracle databases, and transactional processes, using SQL to analyze customer, transaction, and platform behavior during incidents and validations.",
+    "Analyzed integrations and information flows across bank and ATH integration buses, reviewing SOAP services and Web Services to locate failures in transaction processing.",
+    "Supported corporate banking capabilities including bulk file payments, ACH transactions, and administration of permissions, roles, and profiles defined by each bank.",
+    "Documented technical findings and managed JIRA cases when development intervention or software corrections were required.",
+    "Supported deployment windows, platform changes, and new releases by performing technical monitoring, validation, and production support to preserve operational continuity."
   ],
   "stack": [
     "Application Support",
