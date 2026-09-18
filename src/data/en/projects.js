@@ -237,4 +237,34 @@ export const projectDetails = [
     tags: ["telecommunications", "data-analysis", "network-performance", "automation", "business-intelligence"]
   }
 
+  ,{
+    id: "path-rf-postprocessing-network-modernization",
+    experienceId: "path-rf-network-performance",
+    title: "RF, Post-Processing and Mobile Network Evolution",
+    summary: "Participation in 2G, 3G, and 4G/LTE mobile-network migration, implementation, and optimization projects through RF drive testing and post-processing.",
+    points: [
+      "Participated in site migrations to Huawei equipment, performing drive-test validation and working in the field alongside Huawei engineers during integration, migration, and optimization activities.",
+      "Contributed to 4G/LTE implementation and launch projects, including activities related to shared infrastructure between Tigo and Movistar and a 4G project for Avantel.",
+      "Performed post-processing and network-performance analysis for a two-year telecommunications project implemented with Nokia technology.",
+      "Used TEMS Investigation, TEMS Discovery, and Actix Analyzer to assess coverage, quality, interference, network KPIs, and overall network behavior from field measurements."
+    ],
+    stack: ["RF Engineering", "Drive Testing", "Post-Processing", "4G/LTE", "TEMS Investigation", "TEMS Discovery", "Actix Analyzer", "Huawei", "Nokia", "Network Optimization"],
+    tags: ["telecommunications", "rf-engineering", "network-performance", "4g-lte", "network-optimization"]
+  }
+
+  ,{
+    id: "osc-claro-mobile-network-benchmarking",
+    experienceId: "osc-rf-engineer",
+    title: "Claro, Tigo and Movistar Mobile Network Benchmarking",
+    summary: "Benchmarking project for Claro in Bogotá comparing voice and data performance across Claro, Tigo, and Movistar networks through field measurements and RF analysis.",
+    points: [
+      "Participated in comparative measurements of Claro, Tigo, and Movistar networks using multiple devices configured for voice and data scenarios.",
+      "Executed call, short-call, web-browsing, and upload/download tests using Sierra Wireless devices as part of the comparative evaluation.",
+      "Collected RF measurements and georeferenced data through drive testing and analyzed KPIs, throughput, signaling, traffic, and network events.",
+      "Used TEMS, Nemo, Actix Analyzer, Clarify, WindCatcher, MapInfo, and Excel to support technical analysis and result generation."
+    ],
+    stack: ["RF", "Benchmarking", "Drive Testing", "TEMS", "Nemo", "Actix Analyzer", "Clarify", "WindCatcher", "MapInfo", "Excel", "Network KPIs"],
+    tags: ["telecommunications", "rf-engineering", "benchmarking", "network-performance"]
+  }
+
 ];
