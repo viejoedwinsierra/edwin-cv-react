@@ -1,5 +1,7 @@
 export const contactCore = {
   name: 'Edwin Gustavo Sierra Poveda',
+  email: 'edwin.sierra.vlt@gmail.com',
+  emailHref: 'mailto:edwin.sierra.vlt@gmail.com',
   phone: '+57 310 293 1349',
   phoneHref: 'tel:+573102931349',
   location: 'Chía / Bogotá, Colombia',
@@ -7,8 +9,8 @@ export const contactCore = {
   website: 'https://kind-tree-0b760b300.1.azurestaticapps.net/',
   websiteLabel: 'kind-tree-0b760b300.1.azurestaticapps.net',
 
-  linkedin: 'https://www.linkedin.com/in/edwin-gustavo-sierra-poveda-45994a109/',
-  linkedinLabel: 'linkedin.com/in/edwin-gustavo-sierra-poveda-45994a109',
+  linkedin: 'https://www.linkedin.com/in/edwin-gustavo-sierra-poveda/',
+  linkedinLabel: 'linkedin.com/in/edwin-gustavo-sierra-poveda',
 
   github: 'https://github.com/viejoedwinsierra',
   githubLabel: 'github.com/viejoedwinsierra'
@@ -19,17 +21,20 @@ export function getContact(language = 'es') {
     ? {
         location: 'Location',
         phone: 'Phone',
+        email: 'Email',
         website: 'Web CV',
         positioning: 'Professional positioning'
       }
     : {
         location: 'Ubicación',
         phone: 'Teléfono',
+        email: 'Correo',
         website: 'CV Web',
         positioning: 'Posicionamiento profesional'
       };
 
   return [
+    { kind: 'email', label: labels.email, value: contactCore.email, href: contactCore.emailHref },
     {
       kind: 'phone',
       label: labels.phone,

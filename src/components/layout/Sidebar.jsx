@@ -3,6 +3,7 @@ import { SidebarCard } from '../ui/SidebarCard';
 import { targetRoles } from '../../data/core/roleFamilies';
 
 const sidebarContactKinds = new Set([
+  'email',
   'phone',
   'website',
   'linkedin',

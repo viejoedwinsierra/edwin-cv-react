@@ -11,12 +11,13 @@ export const movistarItServicesSpecialist = {
     "Implemented and supported DevOps and CI/CD practices for databases, backend, and frontend workloads using Azure DevOps, Git, and GitHub, including automated builds, testing, deployments, SonarQube static analysis, and GitOps practices on Kubernetes.",
     "Managed Incident Management, Change Management, and Production Support activities for critical enterprise applications through Remedy, including technical analysis, RCA, escalation, production deployments, monitoring, and service stabilization.",
     "Worked with Oracle and PostgreSQL across modernization initiatives, stored procedure optimization, batch processing, data validation and cleansing, auditing, log analysis, and production stabilization.",
+    "Provided technical management for PAPIROS, a corporate document-management platform backed by SQL Server and used to store contracts and employee communications; participated in its evolution and migration from on-premises infrastructure to cloud, coordinating technical activities with development, QA, and infrastructure teams.",
     "Supported enterprise integrations through REST APIs, SOAP services, internal networks, and VPN connectivity, including interoperability with corporate platforms such as SAP and SuccessFactors and authentication and validation mechanisms.",
     "Applied Business Intelligence, operational analytics, and generative AI to support development, monitoring, technical analysis, documentation, and decision-making using Power BI, Excel, Access, ChatGPT, and Kiro under technical and functional validation."
   ],
   "stack": [
     "Technical Leadership", "Application Management", "Java", "Spring Boot", "Python", "Flask", "PHP", "Angular", "React",
-    "PostgreSQL", "Oracle", "SQL", "DML Triggers", "Batch Processing", "REST APIs", "SOAP", "ESB", "Azure",
+    "PostgreSQL", "Oracle", "SQL Server", "SQL", "DML Triggers", "Batch Processing", "REST APIs", "SOAP", "ESB", "Azure",
     "Azure Functions", "Azure Blob Storage", "Azure Virtual Network", "VPN", "Kubernetes", "Argo CD", "GitOps",
     "Infrastructure Monitoring", "AWS · provider environment", "Oracle Cloud", "Azure DevOps", "CI/CD", "Git", "GitHub",
     "JUnit", "Mockito", "SonarQube", "Static Code Analysis", "Code Quality", "Remedy", "ITSM", "Incident Management", "Change Management", "Request Management",

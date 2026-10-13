@@ -15,6 +15,20 @@ export const supportedProjects = [
 // Se mantiene supportedProjects sin cambios para conservar compatibilidad con la exportación actual del CV/PDF.
 export const projectDetails = [
   {
+    id: "sage-sap-integrations",
+    experienceId: "movistar-it-services-specialist",
+    title: "SAGE – Desarrollo Full-Stack e integraciones SAP",
+    summary: "Desarrollo de una solución empresarial para procesos de compras con Angular, Java Spring Boot y PostgreSQL; alcance de 14 interfaces SAP mediante adaptadores SOAP–REST.",
+    points: [
+      "Participé desde etapas tempranas en el desarrollo del backend Java Spring Boot y en el frontend Angular de SAGE.",
+      "Colaboré directamente en el desarrollo de integraciones con SAP mediante adaptadores SOAP–REST, dentro de un alcance de 14 interfaces.",
+      "El proyecto alcanzó un release en producción con operación limitada; la certificación integral estaba en curso cuando fue cancelado por cambios organizacionales."
+    ],
+    stack: ["Java", "Spring Boot", "Angular", "PostgreSQL", "SAP", "SOAP", "REST APIs"],
+    tags: ["full-stack", "sap", "enterprise-integration", "backend"]
+  },
+
+  {
     id: "stolen-devices-modernization",
     experienceId: "movistar-it-services-specialist",
     title: "Modernización de la plataforma de Hurto de Terminales / IMEI",
@@ -37,7 +51,7 @@ export const projectDetails = [
     points: [
       "Participé técnicamente en la migración de aproximadamente 500 GB de información desde Oracle hacia PostgreSQL.",
       "Implementé y validé mecanismos temporales de sincronización mediante triggers para detectar cambios DML y mantener consistencia entre ambas bases de datos durante la transición.",
-      "La sincronización evolucionó inicialmente de Oracle hacia PostgreSQL y posteriormente de PostgreSQL hacia Oracle a medida que la carga funcional era trasladada hacia la nueva plataforma.",
+      "Se mantuvo sincronización temporal de Oracle hacia PostgreSQL durante la coexistencia y se trasladaron gradualmente los procesos certificados a la nueva base de datos.",
       "Participé en validación y depuración de información, auditorías, análisis SQL, revisión de logs y estabilización productiva.",
       "Optimicé procedimientos almacenados, procesamiento batch y mecanismos de notificación y manejo de errores asociados a la plataforma."
     ],
@@ -63,36 +77,49 @@ export const projectDetails = [
     title: "Implementación de Argo CD y prácticas GitOps",
     summary: "Evolución de los procesos de despliegue y operación de aplicaciones sobre Kubernetes.",
     points: [
-      "Participé en la implementación de Argo CD para aplicaciones desplegadas sobre Kubernetes.",
-      "Incorporé prácticas GitOps orientadas a mejorar control, trazabilidad y consistencia de los despliegues.",
+      "Utilicé Argo CD durante la evolución de servicios hacia Kubernetes en Azure, como parte de la operación y seguimiento de despliegues de aplicaciones.",
+      "Operé despliegues y adapté pipelines existentes de Azure DevOps, incluyendo YAML, variables de entorno y parámetros de configuración de aplicaciones.",
       "La iniciativa complementó los procesos existentes de CI/CD basados en Azure DevOps, Git y GitHub."
     ],
     stack: ["Argo CD", "Kubernetes", "GitOps", "Azure DevOps", "Git", "GitHub", "CI/CD"],
     tags: ["devops", "gitops", "cloud", "kubernetes"]
   },
   {
+    id: "sigma-business-requirements",
+    experienceId: "movistar-configuration-specialist",
+    title: "SIGMA – Certificaciones y requerimientos de negocio",
+    summary: "Base de datos SQL Server administrada por el equipo de Parametrización para registrar y dar seguimiento a certificaciones y requerimientos de negocio.",
+    points: [
+      "Administré junto con el equipo de Parametrización la base de datos SQL Server de SIGMA.",
+      "La información se utilizaba para consultar y dar trazabilidad a certificaciones y requerimientos de negocio vinculados con procesos de configuración y liberación de cambios."
+    ],
+    stack: ["SQL Server", "SQL", "Business Requirements", "Certification Tracking", "Configuration Management"],
+    tags: ["sql-server", "database", "business-requirements", "configuration"]
+  },
+  {
     id: "papiros-document-management",
     experienceId: "movistar-it-services-specialist",
     title: "PAPIROS – Gestión documental corporativa",
-    summary: "Gestión técnica de una plataforma corporativa utilizada para almacenamiento y administración de documentación laboral.",
+    summary: "Gestión técnica de una plataforma corporativa sobre SQL Server utilizada para almacenamiento y administración de documentación laboral, incluyendo su evolución de on-premises a cloud.",
     points: [
       "Gestioné técnicamente PAPIROS, plataforma utilizada para almacenar contratos y comunicaciones laborales, incluyendo aumentos y bonos de rendimiento.",
-      "Coordiné actividades técnicas con equipos de desarrollo y QA para soporte, mantenimiento y evolución de la solución."
+      "Coordiné actividades técnicas con equipos de desarrollo y QA para soporte, mantenimiento y evolución de la solución.",
+      "Participé en la migración de PAPIROS desde infraestructura on-premises hacia cloud, dando seguimiento a la continuidad y estabilización de la plataforma durante la transición."
     ],
-    stack: ["Application Management", "QA Coordination", "Production Support"],
+    stack: ["Application Management", "SQL Server", "Cloud Migration", "QA Coordination", "Production Support"],
     tags: ["enterprise-applications", "document-management", "application-support"]
   },
   {
     id: "infissa-financial-platform",
     experienceId: "movistar-it-services-specialist",
-    title: "INFISSA – Plataforma de servicios financieros",
-    summary: "Coordinación técnica y contractual de una plataforma de servicios financieros utilizada por la compañía.",
+    title: "INFISA – Soporte y seguimiento contractual",
+    summary: "Soporte técnico y administración operativa del contrato asignado, con seguimiento presupuestal, de facturación y SLA.",
     points: [
-      "Fui representante del contrato asociado con INFISSA.",
-      "Combiné seguimiento contractual con coordinación técnica, soporte de la solución y relación con el proveedor."
+      "Asumí el soporte técnico y la administración del contrato asignado de INFISA, con seguimiento presupuestal y revisión de facturación bajo un esquema de pago único.",
+      "Realicé seguimiento de SLA, incidentes y continuidad operativa, sin responsabilidad sobre negociación contractual o gestión comercial del proveedor."
     ],
-    stack: ["Contract Management", "Application Support", "Vendor Management"],
-    tags: ["vendor-management", "application-support", "financial-services"]
+    stack: ["Contract Monitoring", "Application Support", "SLA Monitoring", "Incident Management"],
+    tags: ["contract-monitoring", "application-support", "financial-services"]
   },
   {
     id: "datastage-network-traffic",

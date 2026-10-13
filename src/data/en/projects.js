@@ -15,6 +15,20 @@ export const supportedProjects = [
 // supportedProjects remains unchanged to preserve compatibility with the current CV/PDF export.
 export const projectDetails = [
   {
+    id: "sage-sap-integrations",
+    experienceId: "movistar-it-services-specialist",
+    title: "SAGE – Full-Stack Development and SAP Integrations",
+    summary: "Enterprise purchasing application built with Angular, Java Spring Boot, and PostgreSQL, with a scope of 14 SAP interfaces using SOAP–REST adapters.",
+    points: [
+      "Contributed from early development stages to the Java Spring Boot backend and Angular frontend.",
+      "Helped develop SAP integrations through SOAP–REST adapters within a scope of 14 interfaces.",
+      "The project reached a production release with limited operation; end-to-end certification was still in progress when organizational changes led to its cancellation."
+    ],
+    stack: ["Java", "Spring Boot", "Angular", "PostgreSQL", "SAP", "SOAP", "REST APIs"],
+    tags: ["full-stack", "sap", "enterprise-integration", "backend"]
+  },
+
+  {
     id: "stolen-devices-modernization",
     experienceId: "movistar-it-services-specialist",
     title: "Stolen Devices / IMEI Platform Modernization",
@@ -37,7 +51,7 @@ export const projectDetails = [
     points: [
       "Contributed technically to the migration of approximately 500 GB of data from Oracle to PostgreSQL.",
       "Implemented and validated temporary trigger-based synchronization mechanisms to capture DML changes and preserve data consistency between both databases during the transition.",
-      "Synchronization initially operated from Oracle to PostgreSQL and later from PostgreSQL back to Oracle as functional workloads were progressively migrated to the new platform.",
+      "Temporary Oracle-to-PostgreSQL synchronization supported coexistence while certified processes were gradually moved to the new database.",
       "Performed data validation and cleansing, auditing, SQL analysis, log analysis, and production stabilization.",
       "Optimized stored procedures, batch processing, and error notification and handling mechanisms associated with the platform."
     ],
@@ -71,28 +85,41 @@ export const projectDetails = [
     tags: ["devops", "gitops", "cloud", "kubernetes"]
   },
   {
+    id: "sigma-business-requirements",
+    experienceId: "movistar-configuration-specialist",
+    title: "SIGMA – Certifications and Business Requirements",
+    summary: "SQL Server database administered by the Configuration team to register and track certifications and business requirements.",
+    points: [
+      "Co-administered the SIGMA SQL Server database with the Configuration team.",
+      "The information was used to query and trace certifications and business requirements linked to configuration and change-release processes."
+    ],
+    stack: ["SQL Server", "SQL", "Business Requirements", "Certification Tracking", "Configuration Management"],
+    tags: ["sql-server", "database", "business-requirements", "configuration"]
+  },
+  {
     id: "papiros-document-management",
     experienceId: "movistar-it-services-specialist",
     title: "PAPIROS – Corporate Document Management",
-    summary: "Technical management of a corporate platform used to store and manage employee-related documentation.",
+    summary: "Technical management of a SQL Server-based corporate platform used to store and manage employee-related documentation, including its evolution from on-premises to cloud.",
     points: [
       "Provided technical management for PAPIROS, a platform used to store contracts and employee communications, including salary increases and performance bonuses.",
-      "Coordinated technical activities with development and QA teams for support, maintenance, and solution evolution."
+      "Coordinated technical activities with development and QA teams for support, maintenance, and solution evolution.",
+      "Participated in the migration of PAPIROS from on-premises infrastructure to cloud, supporting service continuity and platform stabilization during the transition."
     ],
-    stack: ["Application Management", "QA Coordination", "Production Support"],
+    stack: ["Application Management", "SQL Server", "Cloud Migration", "QA Coordination", "Production Support"],
     tags: ["enterprise-applications", "document-management", "application-support"]
   },
   {
     id: "infissa-financial-platform",
     experienceId: "movistar-it-services-specialist",
-    title: "INFISSA – Financial Services Platform",
+    title: "INFISA – Application Support and Contract Monitoring",
     summary: "Technical and contractual coordination of a financial-services platform used by the company.",
     points: [
       "Served as the contract representative for INFISSA.",
       "Combined contract follow-up with technical coordination, application support, and vendor management."
     ],
-    stack: ["Contract Management", "Application Support", "Vendor Management"],
-    tags: ["vendor-management", "application-support", "financial-services"]
+    stack: ["Contract Monitoring", "Application Support", "SLA Monitoring", "Incident Management"],
+    tags: ["contract-monitoring", "application-support", "financial-services"]
   },
   {
     id: "datastage-network-traffic",

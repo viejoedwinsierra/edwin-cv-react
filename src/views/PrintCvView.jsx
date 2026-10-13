@@ -2,7 +2,7 @@ import React from 'react';
 
 function ContactLine({ cv }) {
   const visible = (cv.contact ?? []).filter((item) =>
-    ['phone', 'location', 'website', 'linkedin', 'github'].includes(item.kind)
+    ['email', 'phone', 'location', 'website', 'linkedin', 'github'].includes(item.kind)
   );
 
   return (
