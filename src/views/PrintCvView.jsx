@@ -66,15 +66,18 @@ function PrintExperience({ experience }) {
   );
 }
 
-function PrintProjects({ projects, technologiesLabel }) {
+function PrintProjects({ projects, technologiesLabel, lang }) {
+  const featuredIds = ["stolen-devices-modernization", "sage-sap-integrations", "papiros-document-management", "infisa-financial-platform", "argocd-gitops", "sigma-business-requirements"];
+  const featured = featuredIds.map((id) => projects.find((project) => project.id === id)).filter(Boolean);
   return (
     <div className="print-project-grid">
-      {projects.map((project) => (
+      {featured.map((project) => (
         <article
           className="print-project"
           key={project.id ?? project.title}
         >
           <h3>{project.title}</h3>
+          {project.summary && <p className="print-project-summary">{project.summary}</p>}
           {project.stack?.length > 0 && (
             <p>
               <strong>{technologiesLabel}:</strong>{' '}
@@ -155,6 +158,7 @@ export function PrintCvView({ cv, lang }) {
         <PrintProjects
           projects={cv.projectDetails ?? []}
           technologiesLabel={labels.technologies}
+          lang={lang}
         />
       </section>
 

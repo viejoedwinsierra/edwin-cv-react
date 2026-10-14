@@ -46,8 +46,6 @@ export const skills = [
   "ChatGPT",
   "Computer Vision",
   "OCR / Document Processing",
-  "SAP",
-  "SuccessFactors",
   "Enterprise APIs",
   "Azure Virtual Network",
   "VPN"

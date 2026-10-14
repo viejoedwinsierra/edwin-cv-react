@@ -72,25 +72,25 @@ function getPrintCapabilityDomains(cv = {}, lang = 'es') {
         'SonarQube', 'Static Code Analysis', 'Code Quality', 'ITSM',
         'Incident Management', 'Change Management', 'Release Management',
         'Root Cause Analysis (RCA)', 'Production Support', 'L2/L3 Support',
-        'L3 Support', 'Troubleshooting', '24x7 Support', '24x7 On-Call'
+        'Troubleshooting', '24x7 On-Call'
       ]
     },
     {
       id: 'enterprise',
       label: lang === 'es' ? 'Aplicaciones empresariales' : 'Enterprise Applications',
       skills: [
-        'CRM / CBS', 'CRM', 'CBS', 'Billing Systems', 'Billing',
+        'CRM / CBS', 'Billing Systems',
         'Rating & Charging', 'SAP', 'SuccessFactors', 'Enterprise Integration',
-        'Enterprise APIs', 'APIs', 'ESB', 'Service Integration',
-        'Application Management', 'Application Support', 'Vendor Management'
+        'Enterprise APIs', 'ESB', 'Service Integration',
+        'Application Management', 'Application Support'
       ]
     },
     {
       id: 'telecom',
       label: lang === 'es' ? 'Telecomunicaciones' : 'Telecommunications',
       skills: [
-        'Telecommunications', 'OSS/BSS', 'RF', 'RF Engineering', '2G', '2G/GSM',
-        '3G', '3G/UMTS', '4G/LTE', 'Network KPIs', 'Network Performance',
+        'Telecommunications', 'OSS/BSS', 'RF Engineering', '2G/GSM',
+        '3G/UMTS', '4G/LTE', 'Network KPIs', 'Network Performance',
         'Network Optimization', 'Drive Testing', 'Post-Processing',
         'Telecom Integration', 'IMEI Management', 'GSMA'
       ]

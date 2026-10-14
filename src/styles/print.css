@@ -394,3 +394,12 @@
   border: 2px solid rgba(63, 120, 167, 0.28);
   background: #ffffff;
 }
+/* V3: concise selected projects with a short outcome, preserving the visual system. */
+@media print {
+  .print-project-summary { color: #344d5d !important; font-size: 7.1pt !important; line-height: 1.25 !important; margin: 2px 0 3px !important; }
+  .print-project-grid { gap: 6px 7px; }
+  .print-project { padding: 6px 7px; }
+  .print-job { break-inside: auto; page-break-inside: auto; }
+  .print-job-head { break-after: avoid; page-break-after: avoid; }
+  .print-job li { break-inside: avoid; page-break-inside: avoid; }
+}

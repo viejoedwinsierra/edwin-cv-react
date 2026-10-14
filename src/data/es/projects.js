@@ -18,7 +18,7 @@ export const projectDetails = [
     id: "sage-sap-integrations",
     experienceId: "movistar-it-services-specialist",
     title: "SAGE – Desarrollo Full-Stack e integraciones SAP",
-    summary: "Desarrollo de una solución empresarial para procesos de compras con Angular, Java Spring Boot y PostgreSQL; alcance de 14 interfaces SAP mediante adaptadores SOAP–REST.",
+    summary: "Desarrollo de una solución empresarial para procesos de compras con Angular, Java Spring Boot y PostgreSQL; integraciones SOAP–REST dentro de un alcance de 14 interfaces SAP; release productivo limitado y certificación pendiente al cancelarse.",
     points: [
       "Participé desde etapas tempranas en el desarrollo del backend Java Spring Boot y en el frontend Angular de SAGE.",
       "Colaboré directamente en el desarrollo de integraciones con SAP mediante adaptadores SOAP–REST, dentro de un alcance de 14 interfaces.",
@@ -31,32 +31,16 @@ export const projectDetails = [
   {
     id: "stolen-devices-modernization",
     experienceId: "movistar-it-services-specialist",
-    title: "Modernización de la plataforma de Hurto de Terminales / IMEI",
-    summary: "Evolución y modernización de una plataforma crítica de telecomunicaciones para gestión de terminales hurtados e información IMEI.",
+    title: "Modernización IMEI y migración Oracle → PostgreSQL",
+    summary: "Liderazgo técnico en la modernización de la validación IMEI para operaciones comerciales, incluida una migración gradual Oracle–PostgreSQL con continuidad productiva.",
     points: [
-      "Ejercí liderazgo técnico sobre la evolución y modernización de la plataforma, coordinando actividades con desarrollo, QA, arquitectura, infraestructura, bases de datos, proveedores y áreas de negocio.",
-      "La solución integraba información con diferentes operadores de Colombia y generaba archivos y reportes relacionados con gestión de IMEI y procesos asociados con GSMA.",
-      "La plataforma manejaba información personal y operativa sensible, requiriendo controles de validación, trazabilidad, análisis y estabilización durante los cambios.",
-      "Participé en pruebas funcionales y técnicas, análisis de logs, validación de información, auditorías, monitoreo y estabilización productiva.",
-      "Apliqué Business Intelligence y analítica operativa para seguimiento de KPIs, trazabilidad y reportería mediante Power BI, Excel y Access."
+      "Coordiné técnicamente actividades con desarrollo, QA, arquitectura y operación en una plataforma crítica que llegó a producción.",
+      "Participé en la migración de aproximadamente 500 GB de información relevante, con coexistencia temporal y sincronización unidireccional mediante procesos y triggers.",
+      "Diseñé junto con QA consultas SQL para conciliación de datos y pruebas de carga, estrés y rendimiento con Apache JMeter.",
+      "Tras certificar datos y procesos, se trasladaron progresivamente las conexiones a PostgreSQL."
     ],
-    stack: ["Java", "Spring Boot", "Python", "Oracle", "PostgreSQL", "REST APIs", "SQL", "Power BI", "Excel", "Microsoft Access"],
-    tags: ["telecommunications", "backend", "data", "application-modernization", "production-support"]
-  },
-  {
-    id: "oracle-postgresql-migration",
-    experienceId: "movistar-it-services-specialist",
-    title: "Migración Oracle → PostgreSQL",
-    summary: "Migración aproximada de 500 GB de información de Oracle a PostgreSQL como parte de la modernización de una plataforma empresarial crítica.",
-    points: [
-      "Participé técnicamente en la migración de aproximadamente 500 GB de información desde Oracle hacia PostgreSQL.",
-      "Implementé y validé mecanismos temporales de sincronización mediante triggers para detectar cambios DML y mantener consistencia entre ambas bases de datos durante la transición.",
-      "Se mantuvo sincronización temporal de Oracle hacia PostgreSQL durante la coexistencia y se trasladaron gradualmente los procesos certificados a la nueva base de datos.",
-      "Participé en validación y depuración de información, auditorías, análisis SQL, revisión de logs y estabilización productiva.",
-      "Optimicé procedimientos almacenados, procesamiento batch y mecanismos de notificación y manejo de errores asociados a la plataforma."
-    ],
-    stack: ["Oracle", "PostgreSQL", "SQL", "DML Triggers", "Batch Processing", "Java", "Python"],
-    tags: ["database", "migration", "data", "modernization", "backend"]
+    stack: ["Java", "Spring Boot", "Angular", "Oracle", "PostgreSQL", "SQL", "DML Triggers", "Apache JMeter", "REST APIs"],
+    tags: ["telecommunications", "backend", "database", "migration", "production-support"]
   },
   {
     id: "scl-decoupling",
@@ -74,7 +58,7 @@ export const projectDetails = [
   {
     id: "argocd-gitops",
     experienceId: "movistar-it-services-specialist",
-    title: "Implementación de Argo CD y prácticas GitOps",
+    title: "Operación con Argo CD y prácticas GitOps",
     summary: "Evolución de los procesos de despliegue y operación de aplicaciones sobre Kubernetes.",
     points: [
       "Utilicé Argo CD durante la evolución de servicios hacia Kubernetes en Azure, como parte de la operación y seguimiento de despliegues de aplicaciones.",
@@ -110,7 +94,7 @@ export const projectDetails = [
     tags: ["enterprise-applications", "document-management", "application-support"]
   },
   {
-    id: "infissa-financial-platform",
+    id: "infisa-financial-platform",
     experienceId: "movistar-it-services-specialist",
     title: "INFISA – Soporte y seguimiento contractual",
     summary: "Soporte técnico y administración operativa del contrato asignado, con seguimiento presupuestal, de facturación y SLA.",
