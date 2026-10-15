@@ -17,17 +17,29 @@ export const projectDetails = [
   {
     id: "sage-sap-integrations",
     experienceId: "movistar-it-services-specialist",
-    title: "SAGE – Desarrollo Full-Stack e integraciones SAP",
-    summary: "Desarrollo de una solución empresarial para procesos de compras con Angular, Java Spring Boot y PostgreSQL; integraciones SOAP–REST dentro de un alcance de 14 interfaces SAP; release productivo limitado y certificación pendiente al cancelarse.",
+    title: "SAGE — Asesoría técnica, Angular e integraciones SAP",
+    summary: "Participación como desarrollador y asesor técnico en una solución Angular / Spring Boot con integraciones SAP SOAP–REST previstas; se contemplaban 14 interfaces. Hubo un release productivo limitado y el proyecto se canceló durante la certificación.",
     points: [
-      "Participé desde etapas tempranas en el desarrollo del backend Java Spring Boot y en el frontend Angular de SAGE.",
-      "Colaboré directamente en el desarrollo de integraciones con SAP mediante adaptadores SOAP–REST, dentro de un alcance de 14 interfaces.",
-      "El proyecto alcanzó un release en producción con operación limitada; la certificación integral estaba en curso cuando fue cancelado por cambios organizacionales."
+      "Desplegué componentes frontend Angular y participé en revisiones de arquitectura con el arquitecto de soluciones y el liderazgo del proyecto.",
+      "Propuse agrupar interfaces en microservicios por responsabilidad funcional para reducir sobrecarga base de CPU y memoria; el equipo adoptó la propuesta.",
+      "No se confirma la certificación o puesta en producción de todas las interfaces previstas."
     ],
-    stack: ["Java", "Spring Boot", "Angular", "PostgreSQL", "SAP", "SOAP", "REST APIs"],
-    tags: ["full-stack", "sap", "enterprise-integration", "backend"]
+    stack: ["Angular", "Java", "Spring Boot", "SAP", "SOAP", "REST APIs"],
+    tags: ["architecture-review", "sap", "enterprise-integration", "frontend"]
   },
-
+  {
+    id: "temporary-personnel-platform",
+    experienceId: "movistar-it-services-specialist",
+    title: "Plataforma de Gestión de Personal Temporal",
+    summary: "Análisis de requerimientos de Recursos Humanos y coordinación de desarrollo y QA de una solución React con 2FA; se desarrolló y probó, pero no se desplegó a producción.",
+    points: [
+      "Participé en el análisis funcional y la definición de la solución con el área de Recursos Humanos.",
+      "Asigné y realicé seguimiento de tareas a 1 desarrollador y 1 profesional de QA.",
+      "El proyecto fue cancelado por cambios de prioridades organizacionales, no por un fallo técnico documentado."
+    ],
+    stack: ["React", "2FA/MFA", "Requirements Analysis", "QA"],
+    tags: ["enterprise-applications", "coordination", "not-released"]
+  },
   {
     id: "stolen-devices-modernization",
     experienceId: "movistar-it-services-specialist",
@@ -35,7 +47,7 @@ export const projectDetails = [
     summary: "Liderazgo técnico en la modernización de la validación IMEI para operaciones comerciales, incluida una migración gradual Oracle–PostgreSQL con continuidad productiva.",
     points: [
       "Coordiné técnicamente actividades con desarrollo, QA, arquitectura y operación en una plataforma crítica que llegó a producción.",
-      "Participé en la migración de aproximadamente 500 GB de información relevante, con coexistencia temporal y sincronización unidireccional mediante procesos y triggers.",
+      "Participé en la migración de una base Oracle con aproximadamente 500 GB de espacio utilizado, con coexistencia temporal y sincronización unidireccional mediante procesos y triggers.",
       "Diseñé junto con QA consultas SQL para conciliación de datos y pruebas de carga, estrés y rendimiento con Apache JMeter.",
       "Tras certificar datos y procesos, se trasladaron progresivamente las conexiones a PostgreSQL."
     ],

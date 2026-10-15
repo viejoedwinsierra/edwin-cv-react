@@ -17,17 +17,29 @@ export const projectDetails = [
   {
     id: "sage-sap-integrations",
     experienceId: "movistar-it-services-specialist",
-    title: "SAGE – Full-Stack Development and SAP Integrations",
-    summary: "Enterprise purchasing application built with Angular, Java Spring Boot, and PostgreSQL, with 14 SAP interfaces in scope using SOAP–REST adapters; a limited production release preceded cancellation during final certification.",
+    title: "SAGE — Technical Advisory, Angular and SAP Integration",
+    summary: "Developer and technical advisor on an Angular / Spring Boot solution with planned SAP SOAP–REST integration; 14 interfaces were envisaged. A limited production release occurred before the project was cancelled during certification.",
     points: [
-      "Contributed from early development stages to the Java Spring Boot backend and Angular frontend.",
-      "Helped develop SAP integrations through SOAP–REST adapters within a scope of 14 interfaces.",
-      "The project reached a production release with limited operation; end-to-end certification was still in progress when organizational changes led to its cancellation."
+      "Deployed Angular frontend components and reviewed architecture with the solution architect and project leadership.",
+      "Proposed grouping interfaces into microservices by functional responsibility to reduce baseline CPU and memory overhead; the proposal was adopted.",
+      "Full certification and production rollout of all planned interfaces have not been established."
     ],
-    stack: ["Java", "Spring Boot", "Angular", "PostgreSQL", "SAP", "SOAP", "REST APIs"],
-    tags: ["full-stack", "sap", "enterprise-integration", "backend"]
+    stack: ["Angular", "Java", "Spring Boot", "SAP", "SOAP", "REST APIs"],
+    tags: ["architecture-review", "sap", "enterprise-integration", "frontend"]
   },
-
+  {
+    id: "temporary-personnel-platform",
+    experienceId: "movistar-it-services-specialist",
+    title: "Temporary Personnel Management Platform",
+    summary: "HR requirements analysis and development/QA coordination for a React application with 2FA; developed and tested but never deployed to production.",
+    points: [
+      "Contributed to functional requirements and solution definition with Human Resources.",
+      "Assigned and tracked work for 1 developer and 1 QA professional.",
+      "The project was cancelled due to changing organizational priorities, not a documented technical failure."
+    ],
+    stack: ["React", "2FA/MFA", "Requirements Analysis", "QA"],
+    tags: ["enterprise-applications", "coordination", "not-released"]
+  },
   {
     id: "stolen-devices-modernization",
     experienceId: "movistar-it-services-specialist",

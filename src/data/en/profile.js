@@ -1,20 +1,20 @@
 export const profile = {
   profile: {
     name: 'Edwin Gustavo Sierra Poveda',
-    title: 'IT Services Specialist | Enterprise Applications | Software | On-Premises & Cloud Infrastructure | Databases | Data | Operations',
+    title: 'Backend | Cloud | Data Engineering — Java · Python · PostgreSQL · Azure',
     location: 'Chía / Bogotá, Colombia',
     email: 'edwin.sierra.vlt@gmail.com',
     linkedin: 'https://www.linkedin.com/in/edwin-gustavo-sierra-poveda/',
     github: 'https://github.com/viejoedwinsierra',
-    sidebarSummary: 'IT Services Specialist with a career connecting telecommunications and networks with enterprise applications, software, databases, integration, on-premises and cloud infrastructure, DevOps, operations, and data. Focused on troubleshooting, RCA, performance, and platform evolution.',
-    summary: 'IT Services Specialist with cross-functional experience across telecommunications, networks and KPI monitoring, enterprise applications, software engineering, databases, integration, and on-premises and cloud infrastructure. I have worked on platform operations and evolution, DevOps, automation, monitoring, troubleshooting, root cause analysis (RCA), and performance improvement, connecting business needs with technical solutions. My background also includes Data Engineering and graduate-level Data Science studies, using data for analysis, automation, and decision-making.',
+    sidebarSummary: 'Software and enterprise application engineering across backend development, databases, integration, modernization and Azure deployments. Hands-on production experience with Docker and Kubernetes, plus specialized support for applications delivered and evolved.',
+    summary: 'Engineer with a background in telecommunications and enterprise applications, focused on backend development, databases, system integration and technology modernization. Coordinated development and QA teams delivering critical application improvements, including an Oracle-to-PostgreSQL migration and deployments to Azure and Kubernetes. Combine software development, automation, CI/CD and specialized technical support for applications under my responsibility. Currently expanding Data Engineering and AWS knowledge through graduate studies and hands-on labs.',
     highlights: [
-      'Java experience across Movistar Colombia, SOLEM, Teka Services, and Andicall',
-      'Backend development with Spring Boot, Python, Flask, and REST APIs',
-      'Enterprise application modernization and Oracle-to-PostgreSQL migration',
-      'Multicloud environments: Azure, AWS, and Oracle Cloud; Azure DevOps, Git, and CI/CD automation',
-      'JUnit, Mockito, integration testing, troubleshooting, and production reliability',
-      'Generative AI for software development, computer vision, SAP/SuccessFactors, and Azure connectivity'
+      'Modernized a critical IMEI application: Oracle to PostgreSQL and transition to Azure',
+      'Technical coordination of up to 4 developers and 2 QA professionals',
+      'Production deployments using Docker, Kubernetes/OpenShift, Azure DevOps and Argo CD',
+      'Backend and enterprise integration: Java, Spring Boot, Python, REST and SOAP',
+      'Automated commercial configuration validation with Access, VBA and SQL Server',
+      'AWS: training and labs; Data Science master’s studies in progress'
     ]
   },
   professionalEvolution: 'Telecommunications & RF → Networks & KPIs → Enterprise Applications → Software & Databases → Integration → On-Premises & Cloud Infrastructure → DevOps, Operations & Monitoring → Data Engineering & Data Science.',

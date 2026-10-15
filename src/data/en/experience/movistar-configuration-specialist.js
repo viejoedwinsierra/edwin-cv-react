@@ -4,6 +4,7 @@ export const movistarConfigurationSpecialist = {
   "period": "Oct 2018 – Mar 2022",
   "location": "Colombia",
   "points": [
+    "Designed and developed a commercial configuration validation tool using Microsoft Access, VBA and SQL Server, replacing multiple manual SQL queries and Excel lookups; validated product parameters, recurring charges, rent calculations, taxes and UVT-based rules for product certification.",
     "Configured commercial offers, pricing models, tariffs, discounts, promotions, charging rules, and billing parameters across CRM, CBS, and Ericsson Altamira platforms for prepaid services.",
     "Implemented parameters related to taxes, billing cycles, minimum-wage updates, UVT changes, and consumption tax according to regulatory and business requirements, including charging-platform and accounting-account configurations.",
     "Configured rating decision trees, USSD services, Mi Movistar capabilities, and content-charging platforms while working with integrations and synchronization across CRM, CBS, and convergent mediation.",
@@ -31,6 +32,7 @@ export const movistarConfigurationSpecialist = {
     "Python",
     "Excel",
     "VBA",
+    "Microsoft Access",
     "XML",
     "Automated Validation",
     "Mass Customer Analysis",

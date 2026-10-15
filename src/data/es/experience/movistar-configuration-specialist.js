@@ -4,6 +4,7 @@ export const movistarConfigurationSpecialist = {
   "period": "Oct 2018 – Mar 2022",
   "location": "Colombia",
   "points": [
+    "Diseñé y desarrollé una automatización de configuración para validaciones de facturación con Microsoft Access, VBA y SQL Server, sustituyendo múltiples consultas SQL y búsquedas manuales en Excel; validaba parámetros comerciales, cálculos de renta, impuestos y UVT para la certificación de productos.",
     "Configuré ofertas comerciales, modelos de pricing, tarifas, descuentos, promociones, reglas de charging y parámetros de facturación en plataformas CRM, CBS y Ericsson Altamira para servicios prepago.",
     "Implementé parámetros asociados con impuestos, ciclos de facturación, salario mínimo, UVT e impuesto al consumo de acuerdo con requerimientos regulatorios y de negocio, incluyendo configuraciones de plataformas de cobro y cuentas contables.",
     "Configuré árboles de decisión para tarificación, servicios USSD, funcionalidades de Mi Movistar y plataformas de cobro de contenidos, trabajando con integraciones y sincronización entre CRM, CBS y mediación convergente.",
@@ -31,6 +32,7 @@ export const movistarConfigurationSpecialist = {
     "Python",
     "Excel",
     "VBA",
+    "Microsoft Access",
     "XML",
     "Automated Validation",
     "Mass Customer Analysis",
