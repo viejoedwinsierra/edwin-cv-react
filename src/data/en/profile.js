@@ -17,7 +17,7 @@ export const profile = {
       'AWS: training and labs; Data Science master’s studies in progress'
     ]
   },
-  professionalEvolution: 'Telecommunications & RF → Networks & KPIs → Enterprise Applications → Software & Databases → Integration → On-Premises & Cloud Infrastructure → DevOps, Operations & Monitoring → Data Engineering & Data Science.',
+  professionalEvolution: 'RF engineering and network optimization → KPI analytics → Enterprise and banking application support → Commercial configuration and billing → Backend development and integrations → Oracle-to-PostgreSQL modernization → Technical coordination, QA and production support → Azure, CI/CD and GitOps → Data Engineering and AWS training.',
   languages: [
     'Spanish: native',
     'English: actively strengthening fluency for interviews, technical presentations, and international collaboration'

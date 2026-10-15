@@ -67,8 +67,7 @@ function PrintExperience({ experience }) {
 }
 
 function PrintProjects({ projects, technologiesLabel, lang }) {
-  const featuredIds = ["stolen-devices-modernization", "sage-sap-integrations", "temporary-personnel-platform"];
-  const featured = featuredIds.map((id) => projects.find((project) => project.id === id)).filter(Boolean);
+  const featured = projects;
   return (
     <div className="print-project-grid">
       {featured.map((project) => (
@@ -78,6 +77,7 @@ function PrintProjects({ projects, technologiesLabel, lang }) {
         >
           <h3>{project.title}</h3>
           {project.summary && <p className="print-project-summary">{project.summary}</p>}
+          {project.status && <p className="print-project-summary"><strong>{lang === "es" ? "Estado" : "Status"}:</strong> {project.status}</p>}
           {project.stack?.length > 0 && (
             <p>
               <strong>{technologiesLabel}:</strong>{' '}

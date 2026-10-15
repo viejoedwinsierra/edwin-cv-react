@@ -15,279 +15,577 @@ export const supportedProjects = [
 // supportedProjects remains unchanged to preserve compatibility with the current CV/PDF export.
 export const projectDetails = [
   {
-    id: "sage-sap-integrations",
-    experienceId: "movistar-it-services-specialist",
-    title: "SAGE — Technical Advisory, Angular and SAP Integration",
-    summary: "Developer and technical advisor on an Angular / Spring Boot solution with planned SAP SOAP–REST integration; 14 interfaces were envisaged. A limited production release occurred before the project was cancelled during certification.",
-    points: [
-      "Deployed Angular frontend components and reviewed architecture with the solution architect and project leadership.",
-      "Proposed grouping interfaces into microservices by functional responsibility to reduce baseline CPU and memory overhead; the proposal was adopted.",
-      "Full certification and production rollout of all planned interfaces have not been established."
+    "id": "matrix-project-01",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Stolen Device Management — Oracle to PostgreSQL Migration",
+    "summary": "Migrated the main stolen-device platform data from Oracle to PostgreSQL while preserving operational continuity.",
+    "points": [
+      "Migrated the main stolen-device platform data from Oracle to PostgreSQL while preserving operational continuity."
     ],
-    stack: ["Angular", "Java", "Spring Boot", "SAP", "SOAP", "REST APIs"],
-    tags: ["architecture-review", "sap", "enterprise-integration", "frontend"]
+    "stack": [
+      "Oracle Database",
+      "PostgreSQL",
+      "SQL",
+      "PL/SQL",
+      "Python",
+      "modelado de datos",
+      "procesos batch",
+      "ChatGPT"
+    ],
+    "status": "Production",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "temporary-personnel-platform",
-    experienceId: "movistar-it-services-specialist",
-    title: "Temporary Personnel Management Platform",
-    summary: "HR requirements analysis and development/QA coordination for a React application with 2FA; developed and tested but never deployed to production.",
-    points: [
-      "Contributed to functional requirements and solution definition with Human Resources.",
-      "Assigned and tracked work for 1 developer and 1 QA professional.",
-      "The project was cancelled due to changing organizational priorities, not a documented technical failure."
+    "id": "matrix-project-02",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Stolen Device Management — SCL CRM Decoupling",
+    "summary": "Progressively decoupled the stolen-device platform from the legacy SCL CRM and its shared data dependencies.",
+    "points": [
+      "Progressively decoupled the stolen-device platform from the legacy SCL CRM and its shared data dependencies."
     ],
-    stack: ["React", "2FA/MFA", "Requirements Analysis", "QA"],
-    tags: ["enterprise-applications", "coordination", "not-released"]
+    "stack": [
+      "Oracle Database",
+      "PostgreSQL",
+      "Azure Functions",
+      "CRM legado",
+      "ChatGPT"
+    ],
+    "status": "Production",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "stolen-devices-modernization",
-    experienceId: "movistar-it-services-specialist",
-    title: "IMEI Modernization and Oracle → PostgreSQL Migration",
-    summary: "Technical leadership in modernizing transaction-critical IMEI validation, including a phased Oracle-to-PostgreSQL migration while maintaining production continuity.",
-    points: [
-      "Coordinated technical work with development, QA, architecture, and operations on a critical platform delivered to production.",
-      "Contributed to migrating approximately 500 GB of relevant data, using temporary coexistence and one-way synchronization through processes and triggers.",
-      "Co-designed SQL data-reconciliation queries and Apache JMeter load, stress, and performance tests with QA.",
-      "After data and process validation, application connections were progressively moved to PostgreSQL."
+    "id": "matrix-project-03",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Stolen Device Management — OSB to OpenShift Integration Modernization",
+    "summary": "Modernized integration services from Oracle Service Bus to OpenShift while maintaining production operation.",
+    "points": [
+      "Modernized integration services from Oracle Service Bus to OpenShift while maintaining production operation."
     ],
-    stack: ["Java", "Spring Boot", "Angular", "Oracle", "PostgreSQL", "SQL", "DML Triggers", "Apache JMeter", "REST APIs"],
-    tags: ["telecommunications", "backend", "database", "migration", "production-support"]
+    "stack": [
+      "Oracle Service Bus (OSB)",
+      "Red Hat OpenShift",
+      "Jenkins",
+      "Azure DevOps",
+      "Kubernetes en Azure",
+      "Aks",
+      "CI/CD",
+      "microservicios",
+      "Postman",
+      "REST APIs",
+      "SOAP",
+      "ChatGPT"
+    ],
+    "status": "Production",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "scl-decoupling",
-    experienceId: "movistar-it-services-specialist",
-    title: "Progressive Decoupling and Retirement of the SCL CRM",
-    summary: "Progressive modernization focused on decoupling enterprise components from the legacy SCL CRM without interrupting service operations.",
-    points: [
-      "Participated in a progressive modernization strategy that maintained temporary coexistence between legacy and new components.",
-      "The transition progressively moved functional responsibilities to the new platform while preserving operational continuity.",
-      "The decoupling process contributed to enabling the later decommissioning of the SCL CRM."
+    "id": "matrix-project-04",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Stolen Device Management — GSMA Integrations",
+    "summary": "Evolved GSMA-related integrations supporting stolen-device information exchange.",
+    "points": [
+      "Evolved GSMA-related integrations supporting stolen-device information exchange."
     ],
-    stack: ["Oracle", "PostgreSQL", "REST APIs", "SOAP", "ESB"],
-    tags: ["legacy-modernization", "architecture", "integration", "migration"]
+    "stack": [
+      "Bash/Shell scripting, procesamiento batch, PostgreSQL, REST APIs, Kubernetes en Azure, Azure DevOps"
+    ],
+    "status": "Production",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "argocd-gitops",
-    experienceId: "movistar-it-services-specialist",
-    title: "Argo CD Operations and GitOps Practices",
-    summary: "Evolution of deployment and operational processes for applications running on Kubernetes.",
-    points: [
-      "Participated in the implementation of Argo CD for applications deployed on Kubernetes.",
-      "Introduced GitOps practices aimed at improving deployment control, traceability, and consistency.",
-      "The initiative complemented existing CI/CD processes based on Azure DevOps, Git, and GitHub."
+    "id": "matrix-project-05",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Stolen Device Management — IBM DataStage Migration to PostgreSQL",
+    "summary": "Adapted IBM DataStage data processing jobs to operate against PostgreSQL instead of Oracle.",
+    "points": [
+      "Adapted IBM DataStage data processing jobs to operate against PostgreSQL instead of Oracle."
     ],
-    stack: ["Argo CD", "Kubernetes", "GitOps", "Azure DevOps", "Git", "GitHub", "CI/CD"],
-    tags: ["devops", "gitops", "cloud", "kubernetes"]
+    "stack": [
+      "Oracle Service Bus (OSB), Red Hat OpenShift, Kubernetes en Azure, Jenkins, Azure DevOps, CI/CD, REST APIs."
+    ],
+    "status": "Production",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "sigma-business-requirements",
-    experienceId: "movistar-configuration-specialist",
-    title: "SIGMA – Certifications and Business Requirements",
-    summary: "SQL Server database administered by the Configuration team to register and track certifications and business requirements.",
-    points: [
-      "Co-administered the SIGMA SQL Server database with the Configuration team.",
-      "The information was used to query and trace certifications and business requirements linked to configuration and change-release processes."
+    "id": "matrix-project-06",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Stolen Device Management — Positive IMEI List Registration",
+    "summary": "Evolved the positive IMEI list registration workflow and its supporting services.",
+    "points": [
+      "Evolved the positive IMEI list registration workflow and its supporting services."
     ],
-    stack: ["SQL Server", "SQL", "Business Requirements", "Certification Tracking", "Configuration Management"],
-    tags: ["sql-server", "database", "business-requirements", "configuration"]
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "Angular",
+      "PostgreSQL",
+      "microservicios",
+      "REST APIs",
+      "JUnit",
+      "Mockito",
+      "Postman"
+    ],
+    "status": "Production",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "papiros-document-management",
-    experienceId: "movistar-it-services-specialist",
-    title: "PAPIROS – Corporate Document Management",
-    summary: "Technical management of a SQL Server-based corporate platform used to store and manage employee-related documentation, including its evolution from on-premises to cloud.",
-    points: [
-      "Provided technical management for PAPIROS, a platform used to store contracts and employee communications, including salary increases and performance bonuses.",
-      "Coordinated technical activities with development and QA teams for support, maintenance, and solution evolution.",
-      "Participated in the migration of PAPIROS from on-premises infrastructure to cloud, supporting service continuity and platform stabilization during the transition."
+    "id": "matrix-project-07",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Stolen Device Management — Negative IMEI List Frontend",
+    "summary": "Enhanced the frontend used to query and register IMEIs in the negative list.",
+    "points": [
+      "Enhanced the frontend used to query and register IMEIs in the negative list."
     ],
-    stack: ["Application Management", "SQL Server", "Cloud Migration", "QA Coordination", "Production Support"],
-    tags: ["enterprise-applications", "document-management", "application-support"]
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "Angular",
+      "PostgreSQL",
+      "microservicios",
+      "REST APIs",
+      "JUnit",
+      "Mockito",
+      "Postman"
+    ],
+    "status": "Production",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "infisa-financial-platform",
-    experienceId: "movistar-it-services-specialist",
-    title: "INFISA – Application Support and Contract Monitoring",
-    summary: "Technical and contractual coordination of a financial-services platform used by the company.",
-    points: [
-      "Provided application support and monitored the assigned INFISA contract, including budget tracking and one-time invoice review.",
-      "Monitored SLAs and incidents; supplier commercial management and contract negotiation were outside my remit."
+    "id": "matrix-project-08",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "SAGE — SAP Integrations",
+    "summary": "Developed SAP SOAP-to-REST integrations within a Java Spring Boot and Angular solution; 14 interfaces were planned. A limited production release occurred before cancellation during certification.",
+    "points": [
+      "Developed SAP SOAP-to-REST integrations within a Java Spring Boot and Angular solution; 14 interfaces were planned. A limited production release occurred before cancellation during certification."
     ],
-    stack: ["Contract Monitoring", "Application Support", "SLA Monitoring", "Incident Management"],
-    tags: ["contract-monitoring", "application-support", "financial-services"]
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "Angular",
+      "SAP",
+      "SOAP",
+      "REST APIs",
+      "Postman"
+    ],
+    "status": "Canceled; limited production release",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "datastage-network-traffic",
-    experienceId: "movistar-it-services-specialist",
-    title: "Inter-network and Intra-network Traffic Processing with IBM DataStage",
-    summary: "Processing and analysis of network-traffic information used for operational and regulatory reporting.",
-    points: [
-      "Worked with IBM DataStage on processes associated with inter-network and intra-network traffic analysis.",
-      "The processed information was used in reporting for company operational and regulatory processes."
+    "id": "matrix-project-09",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Temporary Personnel Management Platform",
+    "summary": "Coordinated development and QA for an HR personnel management solution with authentication controls; canceled before production.",
+    "points": [
+      "Coordinated development and QA for an HR personnel management solution with authentication controls; canceled before production."
     ],
-    stack: ["IBM DataStage", "Data Processing", "Reporting"],
-    tags: ["data-engineering", "telecommunications", "reporting"]
+    "stack": [
+      "React",
+      "Java",
+      "Spring Boot",
+      "Node.js",
+      "Vue.js",
+      "Django y Flask",
+      "MFA/2FA",
+      "Kiro",
+      "IA generativa",
+      "ChatGPT"
+    ],
+    "status": "Canceled; QA completed; not in production",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "legacy-integration-modernization",
-    experienceId: "movistar-it-services-specialist",
-    title: "Enterprise Integration Modernization",
-    summary: "Progressive modernization of legacy integrations toward API-based services.",
-    points: [
-      "Participated in the modernization of Oracle/ESB-based integrations toward REST APIs.",
-      "Maintained SOAP interoperability where required by existing enterprise systems."
+    "id": "matrix-project-10",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "SAP SuccessFactors and Payroll",
+    "summary": "Supported SAP SuccessFactors and payroll-related application integration and operations.",
+    "points": [
+      "Supported SAP SuccessFactors and payroll-related application integration and operations."
     ],
-    stack: ["REST APIs", "SOAP", "Oracle", "ESB"],
-    tags: ["integration", "api", "modernization"]
+    "stack": [
+      "SAP SuccessFactors",
+      "SAP",
+      "XML",
+      "procesamiento batch",
+      "archivos maestros"
+    ],
+    "status": "Operations / maintenance",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "two-factor-authentication",
-    experienceId: "movistar-it-services-specialist",
-    title: "2FA / MFA Authentication Integrations",
-    summary: "Integration of stronger authentication mechanisms into enterprise applications.",
-    points: [
-      "Participated in integrations with two-factor authentication mechanisms for enterprise applications.",
-      "Worked on the required connectivity processes using VPNs and internal corporate networks."
+    "id": "matrix-project-11",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "PAPIROS — Document Management Modernization",
+    "summary": "Participated in document management application modernization and operational support.",
+    "points": [
+      "Participated in document management application modernization and operational support."
     ],
-    stack: ["2FA/MFA", "VPN", "Enterprise Integration"],
-    tags: ["authentication", "integration", "enterprise-applications"]
+    "stack": [
+      "Java",
+      "Microsoft SQL Server",
+      "Microsoft Azure",
+      ".NET"
+    ],
+    "status": "Modernization / operations",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "computer-vision-address-validation",
-    experienceId: "movistar-it-services-specialist",
-    title: "Computer Vision for Address Validation",
-    summary: "Application of computer vision to support address validation during fixed-service home installations.",
-    points: [
-      "Participated in a computer-vision solution used to validate addresses during fixed-service home-installation processes.",
-      "The solution supported process automation and improved information quality."
+    "id": "matrix-project-12",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "INFISA — Contract and Operations Tracking",
+    "summary": "Supported INFISA operational and contractual tracking capabilities.",
+    "points": [
+      "Supported INFISA operational and contractual tracking capabilities."
     ],
-    stack: ["Computer Vision", "Automation", "Data Quality"],
-    tags: ["computer-vision", "automation", "data-quality"]
+    "stack": [
+      "Oracle"
+    ],
+    "status": "Operations / maintenance",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "subscriber-credit-validation",
-    experienceId: "movistar-it-services-specialist",
-    title: "Subscriber and Credit-Risk Validation Integrations",
-    summary: "Enterprise integrations focused on strengthening validation and authentication processes.",
-    points: [
-      "Participated in integrations for subscriber validation and credit-risk-related processes.",
-      "The initiative strengthened authentication and validation mechanisms used across enterprise applications."
+    "id": "matrix-project-13",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Computer Vision — Address Validation",
+    "summary": "Applied computer vision and document-processing techniques to address validation workflows.",
+    "points": [
+      "Applied computer vision and document-processing techniques to address validation workflows."
     ],
-    stack: ["Enterprise Integration", "APIs"],
-    tags: ["enterprise-integration", "validation", "risk"]
+    "stack": [
+      "Python, Django, Flask, OpenCV, Java, Azure AI Document Intelligence, REST APIs."
+    ],
+    "status": "Production",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
   },
   {
-    id: "sap-successfactors-integration",
-    experienceId: "movistar-it-services-specialist",
-    title: "SAP and SuccessFactors Integrations",
-    summary: "Integration of internal applications with corporate business-process and talent-management platforms.",
-    points: [
-      "Participated in integrations between internal applications and SAP and SuccessFactors.",
-      "Worked with APIs, corporate connectivity, VPNs, and internal networks in personnel-selection-related processes."
+    "id": "matrix-project-14",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Cross-Application Argo CD and GitOps Adoption",
+    "summary": "Participated in adopting Argo CD and GitOps practices for application deployment and operations.",
+    "points": [
+      "Participated in adopting Argo CD and GitOps practices for application deployment and operations."
     ],
-    stack: ["SAP", "SuccessFactors", "APIs", "VPN"],
-    tags: ["enterprise-integration", "hr-systems", "api"]
+    "stack": [
+      "Azure DevOps",
+      "Argo CD",
+      "GitOps",
+      "CI/CD",
+      "Kubernetes",
+      "despliegue de microservicios"
+    ],
+    "status": "Implemented cross-team initiative",
+    "company": "Movistar Colombia",
+    "period": "Mar 2022 - May 2026",
+    "tags": [
+      "project-matrix-v22"
+    ]
+  },
+  {
+    "id": "matrix-project-15",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "SIGMA and Automated Commercial Offer Validator",
+    "summary": "Supported commercial-offer configuration, validation and process automation.",
+    "points": [
+      "Supported commercial-offer configuration, validation and process automation."
+    ],
+    "stack": [
+      "Microsoft SQL Server",
+      "SIGMA",
+      "CRM/CBS",
+      "Microsoft Excel",
+      "Microsoft Access",
+      "VBA",
+      "Python"
+    ],
+    "status": "Implemented / operational",
+    "company": "Movistar Colombia",
+    "period": "Oct 2018 - Mar 2022",
+    "tags": [
+      "project-matrix-v22"
+    ]
+  },
+  {
+    "id": "matrix-project-16",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Integrated Revenue Calculator — Movistar Fixed and Mobile Plans",
+    "summary": "Implemented calculation support for integrated fixed and mobile plan revenues.",
+    "points": [
+      "Implemented calculation support for integrated fixed and mobile plan revenues."
+    ],
+    "stack": [
+      "Microsoft SQL Server",
+      "Oracle Database",
+      "Microsoft Excel",
+      "Microsoft Access",
+      "VBA",
+      "XML",
+      "CRM/CBS"
+    ],
+    "status": "Implemented",
+    "company": "Movistar Colombia",
+    "period": "Oct 2018 - Mar 2022",
+    "tags": [
+      "project-matrix-v22"
+    ]
+  },
+  {
+    "id": "matrix-project-17",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Billing Configuration Validation Automation",
+    "summary": "Automated billing configuration checks and operational validations.",
+    "points": [
+      "Automated billing configuration checks and operational validations."
+    ],
+    "stack": [
+      "Microsoft SQL Server",
+      "SQL",
+      "Microsoft Excel",
+      "Microsoft Access",
+      "VBA",
+      "CRM/CBS"
+    ],
+    "status": "Implemented",
+    "company": "Movistar Colombia",
+    "period": "Oct 2018 - Mar 2022",
+    "tags": [
+      "project-matrix-v22"
+    ]
+  },
+  {
+    "id": "matrix-project-18",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "601 Area Code Migration Preparation",
+    "summary": "Prepared systems and validations for the 601 dialing-code change.",
+    "points": [
+      "Prepared systems and validations for the 601 dialing-code change."
+    ],
+    "stack": [
+      "Oracle Database",
+      "SQL",
+      "sistemas de tarificación Ericsson Altamira,"
+    ],
+    "status": "Implemented; exact date not documented",
+    "company": "Movistar Colombia",
+    "period": "Oct 2018 - Mar 2022",
+    "tags": [
+      "project-matrix-v22"
+    ]
+  },
+  {
+    "id": "matrix-project-19",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Unlimited Plans for Movistar",
+    "summary": "Supported commercial configuration for Movistar unlimited-plan offerings.",
+    "points": [
+      "Supported commercial configuration for Movistar unlimited-plan offerings."
+    ],
+    "stack": [
+      "Oracle Database",
+      "SQL",
+      "Ericsson Altamira",
+      "CRM",
+      "Microsoft Excel",
+      "VBA",
+      "sistemas de tarificación Altamira"
+    ],
+    "status": "Implemented",
+    "company": "Movistar Colombia",
+    "period": "Oct 2018 - Mar 2022",
+    "tags": [
+      "project-matrix-v22"
+    ]
+  },
+  {
+    "id": "matrix-project-20",
+    "experienceId": "movistar-it-services-specialist",
+    "title": "Prepaid Product Initiatives",
+    "summary": "Participated in the configuration and validation of prepaid product initiatives.",
+    "points": [
+      "Participated in the configuration and validation of prepaid product initiatives."
+    ],
+    "stack": [
+      "Oracle Database",
+      "SQL",
+      "CRM",
+      "Ericsson MTH",
+      "TIAXA",
+      "Ericsson Altamira",
+      "Microsoft Excel",
+      "VBA",
+      "Remedy"
+    ],
+    "status": "Implemented initiatives",
+    "company": "Movistar Colombia",
+    "period": "Oct 2018 - Mar 2022",
+    "tags": [
+      "project-matrix-v22"
+    ]
+  },
+  {
+    "id": "matrix-project-21",
+    "experienceId": "",
+    "title": "GRETA — New Commercial System",
+    "summary": "Provided implementation and production support for the GRETA commercial platform.",
+    "points": [
+      "Provided implementation and production support for the GRETA commercial platform."
+    ],
+    "stack": [
+      "Java",
+      "Oracle Database",
+      "Python",
+      "SQL",
+      "Microsoft Excel",
+      "VBA",
+      "CRM/CBS",
+      "Service Manager"
+    ],
+    "status": "Implementation / production support",
+    "company": "Teka Services S.A.S.",
+    "period": "Sep 2017 - Abr 2018",
+    "tags": [
+      "project-matrix-v22"
+    ]
+  },
+  {
+    "id": "matrix-project-22",
+    "experienceId": "",
+    "title": "Grupo Aval / ATH Banking Platform",
+    "summary": "Supported a production banking platform and integrations across Grupo Aval and ATH.",
+    "points": [
+      "Supported a production banking platform and integrations across Grupo Aval and ATH."
+    ],
+    "stack": [
+      "Java",
+      "Oracle Database",
+      "SQL",
+      "SOAP",
+      "Web Services",
+      "Jira"
+    ],
+    "status": "Production operations",
+    "company": "SOLEM",
+    "period": "Abr 2018 - Oct 2018",
+    "tags": [
+      "project-matrix-v22"
+    ]
+  },
+  {
+    "id": "matrix-project-23",
+    "experienceId": "",
+    "title": "4G/LTE Rollout and KPI Automation",
+    "summary": "Analyzed 4G/LTE rollout indicators and automated KPI reporting.",
+    "points": [
+      "Analyzed 4G/LTE rollout indicators and automated KPI reporting."
+    ],
+    "stack": [
+      "SQL",
+      "Microsoft Excel",
+      "VBA",
+      "Microsoft Power BI",
+      "Nokia NetAct",
+      "Huawei U2000"
+    ],
+    "status": "Activities completed",
+    "company": "PATH S.A.",
+    "period": "Jun 2016 - Jul 2017",
+    "tags": [
+      "project-matrix-v22"
+    ]
+  },
+  {
+    "id": "matrix-project-24",
+    "experienceId": "",
+    "title": "Mobile Network RF and Post-Processing",
+    "summary": "Performed mobile network RF analysis, drive-test post-processing and performance reporting.",
+    "points": [
+      "Performed mobile network RF analysis, drive-test post-processing and performance reporting."
+    ],
+    "stack": [
+      "TEMS",
+      "Nemo",
+      "Actix Analyzer",
+      "MapInfo",
+      "Microsoft Excel"
+    ],
+    "status": "Activities completed",
+    "company": "PATH S.A.",
+    "period": "Oct 2012 - Dic 2015",
+    "tags": [
+      "project-matrix-v22"
+    ]
+  },
+  {
+    "id": "matrix-project-25",
+    "experienceId": "",
+    "title": "Mobile Network Benchmarking and Post-Processing",
+    "summary": "Performed comparative network benchmarking and post-processing for mobile operators.",
+    "points": [
+      "Performed comparative network benchmarking and post-processing for mobile operators."
+    ],
+    "stack": [
+      "TEMS",
+      "Nemo",
+      "Actix Analyzer",
+      "WindCatcher",
+      "MapInfo",
+      "Microsoft Excel"
+    ],
+    "status": "Activities completed",
+    "company": "OSC Top Solutions Group",
+    "period": "Oct 2010 - Dic 2011",
+    "tags": [
+      "project-matrix-v22"
+    ]
   }
-  ,{
-    id: "automated-offer-validator",
-    experienceId: "movistar-configuration-specialist",
-    title: "Automated Commercial Offer Validator",
-    summary: "Automation designed to validate end-to-end commercial offer configuration before production release.",
-    points: [
-      "Developed an automated validator to verify the consistency of commercial configurations before release.",
-      "The solution supported end-to-end validation across platforms and helped reduce configuration errors.",
-      "Used automation and data analysis to strengthen pre-production validation activities."
-    ],
-    stack: ["Python", "SQL", "Excel", "VBA", "CRM", "CBS", "Ericsson Altamira"],
-    tags: ["automation", "validation", "billing", "telecommunications"]
-  },
-  {
-    id: "integrated-rent-calculator",
-    experienceId: "movistar-configuration-specialist",
-    title: "Integrated Rent Calculator",
-    summary: "Automation for calculating fixed and mobile service charges while considering tariff variations and taxes.",
-    points: [
-      "Developed an integrated-rent calculator for fixed and mobile services.",
-      "The solution accounted for price variations by socioeconomic stratum and tax breakdowns.",
-      "It supported tariff increases and changes associated with UVT."
-    ],
-    stack: ["Python", "Excel", "VBA", "SQL", "Billing"],
-    tags: ["automation", "billing", "pricing", "data"]
-  },
-  {
-    id: "601-dialing-scheme",
-    experienceId: "movistar-configuration-specialist",
-    title: "601 Dialing Scheme Preparation",
-    summary: "Analysis of numbering rules and preparation of Ericsson Altamira changes associated with implementation of the 601 dialing scheme.",
-    points: [
-      "Analyzed and researched numbering rules configured in Ericsson Altamira.",
-      "Participated in preparing the changes required to support implementation of the 601 dialing scheme."
-    ],
-    stack: ["Ericsson Altamira", "Numbering Rules", "Commercial Configuration"],
-    tags: ["telecommunications", "configuration", "numbering"]
-  }
-
-  ,{
-    id: "grupo-aval-sme-banking-ath",
-    experienceId: "solem-support-analyst",
-    title: "Grupo Aval Corporate/SME Banking Platform and ATH Integrations",
-    summary: "Advanced support and integration of a banking platform used by Grupo Aval's four banks through ATH services.",
-    points: [
-      "Provided advanced support for the platform used by Banco de Bogotá, Banco Popular, AV Villas, and Banco de Occidente.",
-      "Analyzed information flows across bank and ATH integration buses, reviewing SOAP services to locate failures in transaction processing.",
-      "Supported bulk file payments, ACH transactions, and administration of permissions, roles, and profiles defined by each bank.",
-      "Used Java, Oracle, and SQL for incident diagnosis, transaction validation, and analysis of customer and platform-process information.",
-      "Supported deployments and platform changes by performing technical validations and monitoring to preserve operational continuity."
-    ],
-    stack: ["Java", "Oracle", "SQL", "SOAP", "Web Services", "ATH", "ACH", "JIRA", "Integration Buses"],
-    tags: ["banking", "application-support", "enterprise-integration", "production-support"]
-  }
-
-  ,{
-    id: "claro-4g-kpi-monitoring-automation",
-    experienceId: "path-kpi-data-analyst",
-    title: "4G/LTE Rollout Tracking and KPI Automation",
-    summary: "Analysis and automation supporting Claro's 4G/LTE rollout tracking and mobile-network performance monitoring in Colombia.",
-    points: [
-      "Supported 4G/LTE rollout tracking through KPI analysis across 2G/GSM, 3G/UMTS, and 4G/LTE technologies.",
-      "Developed automated georeferencing calculations to identify areas affected by interference, channel issues, coverage problems, and performance degradation.",
-      "Automated follow-up reports in Excel using VBA, including automatic generation of PowerPoint presentations to communicate results and KPI evolution.",
-      "Built dashboards and reports with Power BI, Excel, and Microsoft Access to visualize trends, degradations, and network behavior.",
-      "Combined SQL, Nokia NetAct and Huawei U2000 data, automation, and visualization to reduce manual effort and improve operational network monitoring."
-    ],
-    stack: ["SQL", "Nokia NetAct", "Huawei U2000", "4G/LTE", "Network KPIs", "Georeferencing", "Excel", "VBA", "PowerPoint", "Power BI", "Microsoft Access"],
-    tags: ["telecommunications", "data-analysis", "network-performance", "automation", "business-intelligence"]
-  }
-
-  ,{
-    id: "path-rf-postprocessing-network-modernization",
-    experienceId: "path-rf-network-performance",
-    title: "RF, Post-Processing and Mobile Network Evolution",
-    summary: "Participation in 2G, 3G, and 4G/LTE mobile-network migration, implementation, and optimization projects through RF drive testing and post-processing.",
-    points: [
-      "Participated in site migrations to Huawei equipment, performing drive-test validation and working in the field alongside Huawei engineers during integration, migration, and optimization activities.",
-      "Contributed to 4G/LTE implementation and launch projects, including activities related to shared infrastructure between Tigo and Movistar and a 4G project for Avantel.",
-      "Performed post-processing and network-performance analysis for a two-year telecommunications project implemented with Nokia technology.",
-      "Used TEMS Investigation, TEMS Discovery, and Actix Analyzer to assess coverage, quality, interference, network KPIs, and overall network behavior from field measurements."
-    ],
-    stack: ["RF Engineering", "Drive Testing", "Post-Processing", "4G/LTE", "TEMS Investigation", "TEMS Discovery", "Actix Analyzer", "Huawei", "Nokia", "Network Optimization"],
-    tags: ["telecommunications", "rf-engineering", "network-performance", "4g-lte", "network-optimization"]
-  }
-
-  ,{
-    id: "osc-claro-mobile-network-benchmarking",
-    experienceId: "osc-rf-engineer",
-    title: "Claro, Tigo and Movistar Mobile Network Benchmarking",
-    summary: "Benchmarking project for Claro in Bogotá comparing voice and data performance across Claro, Tigo, and Movistar networks through field measurements and RF analysis.",
-    points: [
-      "Participated in comparative measurements of Claro, Tigo, and Movistar networks using multiple devices configured for voice and data scenarios.",
-      "Executed call, short-call, web-browsing, and upload/download tests using Sierra Wireless devices as part of the comparative evaluation.",
-      "Collected RF measurements and georeferenced data through drive testing and analyzed KPIs, throughput, signaling, traffic, and network events.",
-      "Used TEMS, Nemo, Actix Analyzer, Clarify, WindCatcher, MapInfo, and Excel to support technical analysis and result generation."
-    ],
-    stack: ["RF", "Benchmarking", "Drive Testing", "TEMS", "Nemo", "Actix Analyzer", "Clarify", "WindCatcher", "MapInfo", "Excel", "Network KPIs"],
-    tags: ["telecommunications", "rf-engineering", "benchmarking", "network-performance"]
-  }
-
 ];

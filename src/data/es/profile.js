@@ -17,7 +17,7 @@ export const profile = {
       'AWS: formación y laboratorios; Maestría en Ciencia de Datos en curso'
     ]
   },
-  professionalEvolution: 'Telecomunicaciones y RF → Redes y KPIs → Aplicaciones empresariales → Software y bases de datos → Integración → Infraestructura on-premises y cloud → DevOps, operaciones y monitoreo → Data Engineering y Data Science.',
+  professionalEvolution: 'Ingeniería RF y optimización de redes → Analítica de KPIs → Soporte de aplicaciones empresariales y bancarias → Configuración comercial y facturación → Desarrollo backend e integraciones → Modernización Oracle a PostgreSQL → Coordinación técnica, QA y soporte productivo → Azure, CI/CD y GitOps → Formación en Data Engineering y AWS.',
   languages: [
     'Español: nativo',
     'Inglés: fortalecimiento activo de fluidez para entrevistas, presentaciones técnicas y colaboración internacional'
