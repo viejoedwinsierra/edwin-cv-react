@@ -1,4 +1,33 @@
 export const certificationCatalog = [
+  {
+    id: 'tmforum-oda-introduction',
+    name: { es: 'Introduction to the TM Forum and The Open Digital Architecture (ODA)', en: 'Introduction to the TM Forum and The Open Digital Architecture (ODA)' },
+    issuer: 'TM Forum',
+    issued: '2026-09',
+    expires: '2036-09',
+    credentialId: '346353151',
+    credentialUrl: 'https://www.tmforum.org/learn/certification/certification-leaderboard/',
+    credentialUrlType: 'issuer-leaderboard',
+    domains: ['architecture', 'enterprise-applications', 'governance'],
+    evidenceLevel: 'certification'
+  },
+  {
+    id: 'aws-sbg-core-team-member',
+    name: { es: 'AWS SBG Core Team Member Badge', en: 'AWS SBG Core Team Member Badge' },
+    issuer: 'Amazon Web Services (AWS)',
+    issued: '2026-10',
+    domains: ['cloud', 'community'],
+    evidenceLevel: 'badge'
+  },
+  {
+    id: 'aeo-oea-telefonica',
+    name: { es: 'Operador Económico Autorizado (AEO / OEA)', en: 'Authorized Economic Operator (AEO / OEA)' },
+    issuer: 'Telefónica',
+    issued: '2019-07',
+    expires: '2019-07',
+    domains: ['business', 'governance'],
+    evidenceLevel: 'corporate-training'
+  },
   { id: 'oracle-cloud-foundations', name: { es: 'Fundamentos de Oracle Cloud', en: 'Oracle Cloud Foundations' }, issuer: 'Oracle / formación corporativa', domains: ['cloud'], evidenceLevel: 'training', sourceFile: 'oracle_findamentos_cloud.png' },
   { id: 'terraform', name: { es: 'Terraform', en: 'Terraform' }, issuer: 'Udemy', domains: ['cloud', 'devops', 'infrastructure'], evidenceLevel: 'training', sourceFile: 'udemy_terrafom.jpg' },
   { id: 'azure-databases', name: { es: 'Bases de datos en Azure', en: 'Azure Databases' }, issuer: 'Platzi', domains: ['cloud', 'database', 'data'], evidenceLevel: 'training', sourceFile: 'Platzy_base_de_datos_azure.jpg' },

@@ -1,4 +1,7 @@
 export const certifications = [
+  "Introduction to the TM Forum and The Open Digital Architecture (ODA) · TM Forum · Sep 2026",
+  "AWS SBG Core Team Member Badge · Amazon Web Services (AWS) · Oct 2026",
+  "Operador Económico Autorizado (AEO / OEA) · Telefónica · Jul 2019 (vencido)",
   "ChatGPT y tecnología · Udemy",
   "Seguridad de la información e IA · Telefónica/Movistar",
   "CRM · Telefónica/Movistar",

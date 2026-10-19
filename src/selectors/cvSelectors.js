@@ -121,6 +121,6 @@ export function getPrintCv(cv, lang = 'es', variant = 'itServices') {
     experience: getPrintExperience(cv.experience),
     projectDetails: cv.projectDetails ?? [],
     capabilityDomains: getPrintCapabilityDomains(cv, lang),
-    certifications: getSelectedCertifications(lang, variant, 6)
+    certifications: getSelectedCertifications(lang, variant, 4)
   };
 }

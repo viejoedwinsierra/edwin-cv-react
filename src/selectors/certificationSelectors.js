@@ -8,12 +8,19 @@ export function getLocalizedCertifications(lang = 'es') {
   }));
 }
 
-export function getSelectedCertifications(lang = 'es', variant = 'itServices', limit = 6) {
-  const domains = new Set(roleFamilies[variant]?.certificationDomains ?? []);
-  const ranked = getLocalizedCertifications(lang)
-    .map((item) => ({ ...item, score: item.domains.reduce((total, domain) => total + (domains.has(domain) ? 1 : 0), 0) }))
-    .filter((item) => item.score > 0)
-    .sort((a, b) => b.score - a.score || a.displayName.localeCompare(b.displayName));
+// The printable CV intentionally uses a fixed four-item selection in every role family.
+// The website continues to display the complete catalog.
+export const PRINT_CERTIFICATION_IDS = [
+  'tmforum-oda-introduction',
+  'agility',
+  'cybersecurity-personal-data',
+  'contract-management'
+];
 
-  return ranked.slice(0, limit);
+export function getSelectedCertifications(lang = 'es', variant = 'itServices', limit = 4) {
+  const localized = getLocalizedCertifications(lang);
+  const byId = new Map(localized.map((item) => [item.id, item]));
+  return PRINT_CERTIFICATION_IDS.slice(0, limit)
+    .map((id) => byId.get(id))
+    .filter(Boolean);
 }
