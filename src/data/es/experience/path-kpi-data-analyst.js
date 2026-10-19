@@ -1,13 +1,14 @@
 export const pathKpiDataAnalyst = {
+  id: "path-kpi-data-analyst",
   "role": "Analista de KPIs / Analista de Datos",
   "company": "PATH S.A.",
   "period": "Jun 2016 – Jul 2017",
   "location": "Colombia",
   "points": [
-    "Monitoreé el desempeño de la red móvil de Claro mediante análisis de KPIs operativos y de performance sobre tecnologías 2G/GSM, 3G/UMTS y 4G/LTE, apoyando el seguimiento de la evolución y despliegue de la red.",
-    "Trabajé con información de elementos de acceso y Core como BTS/BSC, NodeB/RNC, MSC/HLR, SGSN/GGSN, eNodeB y EPC, incluyendo MME, S-GW, P-GW y HSS, para análisis de desempeño y comportamiento de la red.",
-    "Consulté y extraje información desde Nokia NetAct y Huawei U2000, utilizando SQL para consolidar, transformar y dar seguimiento a datos de performance y KPIs.",
-    "Integré análisis de datos, georreferenciación, automatización y Business Intelligence mediante Excel, VBA, Power BI, Microsoft Access y PowerPoint para reducir trabajo manual, identificar degradaciones y comunicar resultados de desempeño de la red."
+      "Monitoreé indicadores de desempeño de redes móviles, identificando variaciones, tendencias y posibles degradaciones del servicio.",
+      "Consolidé, depuré y transformé información de distintas fuentes para facilitar el análisis y seguimiento operativo.",
+      "Analicé indicadores de calidad y desempeño, identificando comportamientos relevantes y oportunidades de mejora.",
+      "Elaboré reportes y automatizaciones para procesar información, presentar resultados y facilitar el seguimiento de indicadores."
   ],
   "stack": [
     "SQL",

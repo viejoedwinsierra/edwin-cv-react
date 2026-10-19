@@ -17,6 +17,7 @@ function App() {
   const [variant, setVariant] = useState('itServices');
   const [activeView, setActiveView] = useState(getInitialView);
   const [openJobs, setOpenJobs] = useState([0]);
+  const [selectedProjectId, setSelectedProjectId] = useState(null);
   const cv = useCvContent(lang);
   const printCv = useMemo(() => getPrintCv(cv, lang, variant), [cv, lang, variant]);
 
@@ -33,6 +34,11 @@ function App() {
     document.querySelector('.web-cv .content')?.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const openProject = (projectId) => {
+    setSelectedProjectId(projectId);
+    navigate('projects');
+  };
+
   return (
     <div className="page-shell">
       <TopBar
@@ -45,7 +51,7 @@ function App() {
         onToggleLanguage={() => setLang((current) => current === 'es' ? 'en' : 'es')}
         onPrint={() => window.print()}
       />
-      <WebCvView cv={cv} lang={lang} activeView={activeView} openJobs={openJobs} onToggleJob={toggleJob} />
+      <WebCvView cv={cv} lang={lang} activeView={activeView} openJobs={openJobs} onToggleJob={toggleJob} onOpenProject={openProject} selectedProjectId={selectedProjectId} />
       <PrintCvView cv={printCv} lang={lang} />
     </div>
   );

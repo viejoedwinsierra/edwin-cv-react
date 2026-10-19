@@ -1,15 +1,14 @@
 export const solemSupportAnalyst = {
+  id: "solem-support-analyst",
   "role": "Support Analyst Engineer",
   "company": "SOLEM",
   "period": "Apr 2018 – Oct 2018",
   "location": "Bogotá, Colombia",
   "points": [
-    "Provided advanced L2/L3 support for the corporate/SME banking platform used by Banco de Bogotá, Banco Popular, AV Villas, and Banco de Occidente, integrated through ATH services and operated under a 24x7 support model.",
-    "Performed technical troubleshooting across Java applications, Oracle databases, and transactional processes, using SQL to analyze customer, transaction, and platform behavior during incidents and validations.",
-    "Analyzed integrations and information flows across bank and ATH integration buses, reviewing SOAP services and Web Services to locate failures in transaction processing.",
-    "Supported corporate banking capabilities including bulk file payments, ACH transactions, and administration of permissions, roles, and profiles defined by each bank.",
-    "Documented technical findings and managed JIRA cases when development intervention or software corrections were required.",
-    "Supported deployment windows, platform changes, and new releases by performing technical monitoring, validation, and production support to preserve operational continuity."
+      "Provided specialized support for financial transaction applications, diagnosing incidents and supporting their resolution.",
+      "Analyzed logs, data queries, and integration flows to identify inconsistencies and potential causes of service failures.",
+      "Tracked requests, incidents, and technical escalations, coordinating with responsible teams and documenting outcomes.",
+      "Validated application fixes and changes through testing and post-implementation verification."
   ],
   "stack": [
     "Application Support",

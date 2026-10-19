@@ -1,7 +1,7 @@
 import React from 'react';
 import { ExperienceSection } from '../components/sections/ExperienceSection';
 
-export function ExperienceView({ cv, lang, openJobs, onToggleJob }) {
+export function ExperienceView({ cv, lang, openJobs, onToggleJob, onOpenProject }) {
   const evolutionTitle =
     lang === 'es' ? 'Evolución profesional' : 'Professional Evolution';
 
@@ -44,6 +44,8 @@ export function ExperienceView({ cv, lang, openJobs, onToggleJob }) {
         lang={lang}
         openJobs={openJobs}
         onToggleJob={onToggleJob}
+        projects={cv.projectDetails ?? []}
+        onOpenProject={onOpenProject}
       />
     </div>
   );

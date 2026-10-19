@@ -1,17 +1,14 @@
 export const movistarItServicesSpecialist = {
+  id: "movistar-it-services-specialist",
   "role": "IT Services Specialist",
   "company": "Colombia Telecomunicaciones S.A.",
   "period": "Mar 2022 – May 2026",
   "location": "Bogotá, Colombia",
   "points": [
-    "Technically coordinated the evolution of the critical IMEI/Stolen Devices application through production release, organizing work for up to 4 developers and 2 QA professionals and collaborating with architecture, Cloud, DevOps and business teams.",
-    "Drove IMEI application modernization through Oracle-to-PostgreSQL migration, legacy CRM decoupling, integration updates and migration of components to Azure; the Oracle database occupied approximately 500 GB.",
-    "Developed and evolved backend components and enterprise integrations using Java, Spring Boot, Python, SQL and REST/SOAP APIs, collaborating with architecture and development teams.",
-    "Worked directly on production deployments of Docker and Kubernetes/OpenShift applications; adjusted existing Azure DevOps pipelines and used Argo CD without administering the underlying clusters.",
-    "Reviewed application changes and supported releases alongside QA validation; provided specialized troubleshooting and RCA for applications under my responsibility in coordination with the corporate support team.",
-    "Contributed to SAGE as a developer and technical advisor: deployed Angular components and proposed grouping SAP interfaces by functional domain to avoid low-utilization microservices; the proposal was adopted. SAGE had a limited production release and was cancelled while certification was still underway.",
-    "For the Temporary Personnel Management platform, analyzed HR requirements, supported solution design and coordinated 1 developer and 1 QA professional; the React application with 2FA was developed and tested but never deployed to production due to changing priorities.",
-    "Contributed to the evolution and modernization of other enterprise applications, including PAPIROS, coordinating activities with development, QA and infrastructure teams."
+      "Coordinated the evolution and modernization of critical enterprise applications, working with development, QA, architecture, and infrastructure teams through implementation and release.",
+      "Developed and enhanced full-stack enterprise solutions, system integrations, and flat-file ingestion, transformation, and processing workflows, contributing to analysis, testing, and functional validation.",
+      "Tracked technical project planning and execution, assigned tasks to development and QA teams, monitored progress, managed dependencies, and verified deliverables.",
+      "Provided specialized enterprise application support, troubleshooting incidents, performing root cause analysis, and supporting production changes to maintain operational continuity."
   ],
   "stack": [
     "Technical Leadership", "Application Management", "Java", "Spring Boot", "Python", "Flask", "PHP", "Angular", "React",

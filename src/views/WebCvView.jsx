@@ -6,10 +6,10 @@ import { CapabilitiesView } from './CapabilitiesView';
 import { EducationView } from './EducationView';
 import { CertificationsView } from './CertificationsView';
 
-export function WebCvView({ cv, lang, activeView, openJobs, onToggleJob }) {
+export function WebCvView({ cv, lang, activeView, openJobs, onToggleJob, onOpenProject, selectedProjectId }) {
   const views = {
-    experience: <ExperienceView cv={cv} lang={lang} openJobs={openJobs} onToggleJob={onToggleJob} />,
-    projects: <ProjectsView cv={cv} lang={lang} />,
+    experience: <ExperienceView cv={cv} lang={lang} openJobs={openJobs} onToggleJob={onToggleJob} onOpenProject={onOpenProject} />,
+    projects: <ProjectsView cv={cv} lang={lang} selectedProjectId={selectedProjectId} />,
     skills: <CapabilitiesView cv={cv} lang={lang} />,
     education: <EducationView cv={cv} />,
     certifications: <CertificationsView cv={cv} lang={lang} />

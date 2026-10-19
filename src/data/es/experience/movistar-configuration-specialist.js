@@ -1,19 +1,14 @@
 export const movistarConfigurationSpecialist = {
+  id: "movistar-configuration-specialist",
   "role": "Especialista de Configuración",
   "company": "Colombia Telecomunicaciones S.A.",
   "period": "Oct 2018 – Mar 2022",
   "location": "Colombia",
   "points": [
-    "Diseñé y desarrollé una automatización de configuración para validaciones de facturación con Microsoft Access, VBA y SQL Server, sustituyendo múltiples consultas SQL y búsquedas manuales en Excel; validaba parámetros comerciales, cálculos de renta, impuestos y UVT para la certificación de productos.",
-    "Configuré ofertas comerciales, modelos de pricing, tarifas, descuentos, promociones, reglas de charging y parámetros de facturación en plataformas CRM, CBS y Ericsson Altamira para servicios prepago.",
-    "Implementé parámetros asociados con impuestos, ciclos de facturación, salario mínimo, UVT e impuesto al consumo de acuerdo con requerimientos regulatorios y de negocio, incluyendo configuraciones de plataformas de cobro y cuentas contables.",
-    "Configuré árboles de decisión para tarificación, servicios USSD, funcionalidades de Mi Movistar y plataformas de cobro de contenidos, trabajando con integraciones y sincronización entre CRM, CBS y mediación convergente.",
-    "Ejecuté análisis, validaciones y correcciones controladas de bases de datos mediante SQL y desarrollé automatizaciones con Python, Excel y VBA para análisis masivo de clientes, regularizaciones y reducción de tareas manuales.",
-    "Administré junto con el equipo de Parametrización la base de datos SQL Server de SIGMA, utilizada para registrar, consultar y dar seguimiento a certificaciones y requerimientos de negocio asociados con los procesos de configuración y liberación de cambios.",
-    "Realicé análisis de XML, trazabilidad de órdenes, validaciones de sincronización y réplica y actividades de soporte durante incidentes y cambios sobre plataformas comerciales y de facturación.",
-    "Participé en rotaciones mensuales de soporte on-call 7x24 para atender incidentes productivos, cambios urgentes y eventos que pudieran afectar la continuidad de los servicios.",
-    "Trabajé con equipos de Business Intelligence utilizando KPIs y reportería para analizar el impacto de configuraciones, ofertas y cambios tarifarios sobre ventas, adopción de productos y comportamiento de clientes.",
-    "Validé y certifiqué nuevos productos y cambios comerciales antes de producción, colaborando con equipos de negocio, QA, CRM, Billing, desarrollo y soporte productivo."
+      "Administré la configuración de productos, ofertas, tarifas, descuentos y reglas de negocio en plataformas comerciales, conforme a los requerimientos funcionales.",
+      "Participé en la configuración, validación y seguimiento de procesos de tarificación, cobro y facturación, identificando inconsistencias en las reglas comerciales.",
+      "Desarrollé automatizaciones para consultar, procesar y validar información comercial, agilizando actividades operativas y el análisis de inconsistencias.",
+      "Ejecuté pruebas y certificaciones de productos y configuraciones, acompañando su implementación, atención de incidentes y estabilización operativa."
   ],
   "stack": [
     "CRM",

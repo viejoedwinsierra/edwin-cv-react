@@ -1,17 +1,14 @@
 export const movistarItServicesSpecialist = {
+  id: "movistar-it-services-specialist",
   "role": "Especialista de Servicios TI",
   "company": "Colombia Telecomunicaciones S.A.",
   "period": "Mar 2022 – May 2026",
   "location": "Bogotá, Colombia",
   "points": [
-    "Coordiné técnicamente la evolución de Hurto de Terminales, aplicación crítica puesta en producción, organizando actividades de hasta 4 desarrolladores y 2 profesionales de QA y articulando trabajo con arquitectura, Cloud, DevOps y negocio.",
-    "Impulsé la modernización de Hurto de Terminales: migración Oracle a PostgreSQL, desacoplamiento del CRM legado, actualización de integraciones y traslado de componentes a Azure; la base Oracle utilizaba aproximadamente 500 GB de espacio.",
-    "Desarrollé y evolucioné componentes backend e integraciones empresariales con Java, Spring Boot, Python, SQL y APIs REST/SOAP, en coordinación con equipos de arquitectura y desarrollo.",
-    "Participé directamente en despliegues productivos de aplicaciones contenerizadas con Docker y Kubernetes/OpenShift; ajusté pipelines existentes de Azure DevOps y utilicé Argo CD, sin administrar la infraestructura base de los clústeres.",
-    "Realicé revisión técnica de cambios y acompañé su liberación con las validaciones de QA; brindé soporte especializado, diagnóstico y RCA a las aplicaciones bajo mi responsabilidad, coordinándome con el área corporativa de soporte.",
-    "En SAGE participé como desarrollador y asesor técnico: desplegué componentes Angular y propuse agrupar interfaces SAP por dominio funcional para evitar microservicios de bajo uso; la propuesta fue adoptada. Hubo un release productivo limitado y la certificación continuaba cuando el proyecto se canceló.",
-    "En la plataforma de Gestión de Personal Temporal analicé requerimientos de Recursos Humanos, apoyé el diseño de la solución y coordiné a 1 desarrollador y 1 QA; se desarrolló en React con 2FA y se probó, pero no llegó a producción por cambios de prioridades.",
-    "Participé en la evolución y modernización de otras aplicaciones empresariales, incluido PAPIROS, coordinando tareas con desarrollo, QA e infraestructura."
+      "Coordiné la evolución y modernización de aplicaciones empresariales críticas, articulando equipos de desarrollo, calidad, arquitectura e infraestructura durante su implementación y liberación.",
+      "Desarrollé y evolucioné soluciones empresariales Full Stack, integraciones entre sistemas y procesos de carga, transformación y procesamiento de archivos planos, participando en el análisis, las pruebas y la validación funcional.",
+      "Realicé seguimiento técnico a la planificación y ejecución de proyectos, asignando actividades a los equipos de desarrollo y calidad, supervisando avances, gestionando dependencias y verificando entregables.",
+      "Brindé soporte especializado a aplicaciones empresariales, diagnosticando y resolviendo incidentes, realizando análisis de causa raíz y acompañando cambios productivos para contribuir a la continuidad operativa."
   ],
   "stack": [
     "Technical Leadership", "Application Management", "Java", "Spring Boot", "Python", "Flask", "PHP", "Angular", "React",

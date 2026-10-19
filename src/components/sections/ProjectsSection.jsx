@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { SectionTitle } from '../ui/SectionTitle';
 
 function LegacyProjectCard({ project, lang }) {
@@ -10,12 +10,12 @@ function LegacyProjectCard({ project, lang }) {
   );
 }
 
-function ProjectCard({ project, lang }) {
+function ProjectCard({ project, lang, selected }) {
   const detailLabel = lang === 'es' ? 'Ver detalle técnico' : 'View technical details';
   const technologiesLabel = lang === 'es' ? 'Tecnologías' : 'Technologies';
 
   return (
-    <article className="project-chip project-chip--detailed">
+    <article id={project.id} className={`project-chip project-chip--detailed ${selected ? 'project-chip--selected' : ''}`}>
       <h3>{project.title}</h3>
 
       {project.summary && (
@@ -29,7 +29,7 @@ function ProjectCard({ project, lang }) {
       )}
 
       {project.points?.length > 0 && (
-        <details className="project-details">
+        <details key={`${project.id}-${selected ? 'selected' : 'normal'}`} open={selected ? true : undefined} className="project-details">
           <summary>{detailLabel}</summary>
           <ul>
             {project.points.map((point, index) => (
@@ -42,7 +42,12 @@ function ProjectCard({ project, lang }) {
   );
 }
 
-export function ProjectsSection({ projects = [], title, lang }) {
+export function ProjectsSection({ projects = [], title, lang, selectedProjectId }) {
+  useEffect(() => {
+    if (!selectedProjectId) return;
+    const target = document.getElementById(selectedProjectId);
+    target?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, [selectedProjectId, lang]);
   const intro = lang === 'es'
     ? 'Plataformas, modernizaciones e iniciativas empresariales en las que he participado.'
     : 'Enterprise platforms, modernization initiatives, and solutions I have contributed to.';
@@ -69,6 +74,7 @@ export function ProjectsSection({ projects = [], title, lang }) {
               key={project.id ?? project.title}
               project={project}
               lang={lang}
+              selected={project.id === selectedProjectId}
             />
           );
         })}

@@ -1,13 +1,14 @@
 export const pathRfNetworkPerformance = {
+  id: "path-rf-network-performance",
   "role": "Ingeniero RF / Analista de Postprocesamiento y Desempeño de Red",
   "company": "PATH S.A.",
   "period": "Oct 2012 – Dic 2015",
   "location": "Bogotá, Colombia",
   "points": [
-    "Participé en ingeniería RF, drive testing, postprocesamiento y optimización de redes móviles 2G, 3G y 4G/LTE.",
-    "Utilicé TEMS Investigation, TEMS Discovery y Actix Analyzer para analizar cobertura, calidad, interferencias, KPIs y comportamiento de la red a partir de mediciones de campo.",
-    "Realicé validaciones de red mediante drive tests y análisis de desempeño durante actividades de integración, migración y optimización de infraestructura móvil.",
-    "Elaboré reportes técnicos de performance e identifiqué oportunidades de mejora relacionadas con cobertura, calidad, interferencia y optimización de red."
+      "Ejecuté y analicé mediciones de campo para evaluar cobertura, calidad y comportamiento de redes móviles.",
+      "Procesé registros de medición e indicadores de desempeño para identificar condiciones que afectaban la calidad del servicio.",
+      "Identifiqué problemas de cobertura, interferencia y desempeño, aportando información para evaluar alternativas de optimización.",
+      "Elaboré informes técnicos y análisis comparativos para documentar hallazgos y apoyar decisiones de mejora de red."
   ],
   "stack": [
     "RF Engineering", "Drive Testing", "Post-Processing", "Network Performance", "Network KPIs",

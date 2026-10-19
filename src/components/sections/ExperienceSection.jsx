@@ -2,7 +2,7 @@ import React from 'react';
 import { SectionTitle } from '../ui/SectionTitle';
 import { TimelineItem } from '../ui/TimelineItem';
 
-export function ExperienceSection({ experience, title, lang, openJobs, onToggleJob }) {
+export function ExperienceSection({ experience, title, lang, openJobs, onToggleJob, projects = [], onOpenProject }) {
   return (
     <section>
       <SectionTitle id="experience">{title}</SectionTitle>
@@ -14,6 +14,8 @@ export function ExperienceSection({ experience, title, lang, openJobs, onToggleJ
             lang={lang}
             expanded={openJobs.includes(index)}
             onToggle={() => onToggleJob(index)}
+            projects={projects.filter((project) => project.experienceId === item.id)}
+            onOpenProject={onOpenProject}
           />
         ))}
       </div>

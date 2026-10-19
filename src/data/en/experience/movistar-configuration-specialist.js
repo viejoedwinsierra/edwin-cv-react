@@ -1,19 +1,14 @@
 export const movistarConfigurationSpecialist = {
+  id: "movistar-configuration-specialist",
   "role": "Configuration Specialist",
   "company": "Colombia Telecomunicaciones S.A.",
   "period": "Oct 2018 – Mar 2022",
   "location": "Colombia",
   "points": [
-    "Designed and developed a commercial configuration validation tool using Microsoft Access, VBA and SQL Server, replacing multiple manual SQL queries and Excel lookups; validated product parameters, recurring charges, rent calculations, taxes and UVT-based rules for product certification.",
-    "Configured commercial offers, pricing models, tariffs, discounts, promotions, charging rules, and billing parameters across CRM, CBS, and Ericsson Altamira platforms for prepaid services.",
-    "Implemented parameters related to taxes, billing cycles, minimum-wage updates, UVT changes, and consumption tax according to regulatory and business requirements, including charging-platform and accounting-account configurations.",
-    "Configured rating decision trees, USSD services, Mi Movistar capabilities, and content-charging platforms while working with integrations and synchronization across CRM, CBS, and convergent mediation.",
-    "Performed controlled database analysis, validation, and corrections using SQL and developed Python, Excel, and VBA automations for large-scale customer analysis, regularizations, and reduction of manual activities.",
-    "Co-administered with the Configuration team the SIGMA SQL Server database, used to register, query, and track certifications and business requirements related to configuration and change-release processes.",
-    "Performed XML analysis, order traceability, synchronization and replication validation, and technical support activities during incidents and changes affecting commercial and billing platforms.",
-    "Participated in a monthly 24x7 on-call rotation to handle production incidents, urgent changes, and events affecting service continuity.",
-    "Worked with Business Intelligence teams using KPIs and reporting to analyze the impact of configurations, commercial offers, and tariff changes on sales, product adoption, and customer behavior.",
-    "Validated and certified new products and commercial changes before production, collaborating with Business, QA, CRM, Billing, Development, and Production Support teams."
+      "Managed the configuration of products, offers, rates, discounts, and business rules in commercial platforms according to functional requirements.",
+      "Configured, validated, and monitored rating, charging, and billing processes, identifying inconsistencies in commercial rules.",
+      "Developed automation to query, process, and validate commercial data, streamlining operational tasks and inconsistency analysis.",
+      "Performed product and configuration testing and certification, supporting implementation, incident resolution, and operational stabilization."
   ],
   "stack": [
     "CRM",

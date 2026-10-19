@@ -831,3 +831,11 @@ html,
 .evidence-grid { grid-template-columns: 1fr; }
   .variant-control { width: 100%; justify-content: space-between; }
 }
+
+/* Experience -> project navigation: reuse the existing skill-tag style. */
+.experience-projects { margin: 18px 0; }
+.experience-projects h4 { margin: 0 0 10px; color: var(--primary-dark); }
+.project-link-tag { cursor: pointer; font: inherit; text-align: left; line-height: 1.3; }
+.project-link-tag:hover, .project-link-tag:focus-visible { background: #d9ebf8; border-color: var(--primary); outline-offset: 2px; }
+.project-chip--selected { border: 2px solid var(--primary); box-shadow: 0 0 0 3px rgba(63,120,167,.13); }
+.project-chip--selected .project-details { text-align: left; }
