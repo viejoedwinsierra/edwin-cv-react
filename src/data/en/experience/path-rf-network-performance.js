@@ -11,8 +11,15 @@ export const pathRfNetworkPerformance = {
       "Produced technical reports and comparative analyses to document findings and support network improvements."
   ],
   "stack": [
-    "RF Engineering", "Drive Testing", "Post-Processing", "Network Performance", "Network KPIs",
-    "2G", "3G", "4G/LTE", "TEMS Investigation", "TEMS Discovery", "Actix Analyzer",
-    "Huawei", "Nokia", "Network Optimization"
+    "RF Engineering",
+    "Drive Testing",
+    "Post-Processing",
+    "Network KPIs",
+    "TEMS",
+    "Nemo",
+    "Actix Analyzer",
+    "MapInfo",
+    "Microsoft Excel",
+    "Network Optimization"
   ]
 };

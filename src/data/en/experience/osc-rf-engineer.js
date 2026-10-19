@@ -11,8 +11,15 @@ export const oscRfEngineer = {
       "Prepared reports and georeferenced analyses to present findings and support network evaluation and optimization."
   ],
   stack: [
-    "Telecommunications", "RF", "GSM", "UMTS", "HSPA/HSDPA+", "HSUPA",
-    "Drive Testing", "TEMS", "Nemo", "Actix Analyzer", "Clarify", "WindCatcher",
-    "MapInfo", "Excel", "Network KPIs", "Benchmarking", "Nokia", "Huawei"
+    "RF Engineering",
+    "Drive Testing",
+    "Benchmarking",
+    "TEMS",
+    "Nemo",
+    "Actix Analyzer",
+    "WindCatcher",
+    "MapInfo",
+    "Microsoft Excel",
+    "Network KPIs"
   ]
 };

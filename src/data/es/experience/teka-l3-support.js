@@ -11,10 +11,15 @@ export const tekaL3Support = {
       "Desarrollé herramientas de apoyo para automatizar tareas operativas, documentar hallazgos y contribuir a la continuidad del servicio."
   ],
   "stack": [
-    "L3 Support", "Application Support", "CRM", "Java", "Oracle", "SQL",
-    "Python", "Excel", "VBA", "Huawei", "Service Manager", "Incident Management",
-    "Root Cause Analysis (RCA)", "Troubleshooting", "OSS/BSS",
-    "Telecom Integration", "Prepaid Services", "Commercial Configuration",
-    "USSD", "Ericsson Altamira"
+    "L3 Application Support",
+    "CRM/CBS",
+    "Java",
+    "Oracle",
+    "SQL",
+    "Python",
+    "VBA",
+    "Microsoft Excel",
+    "Service Manager",
+    "Incident Management"
   ]
 };

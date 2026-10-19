@@ -11,16 +11,13 @@ export const andicallSoftwareEngineer = {
       "Acompañé el seguimiento de servicios y solicitudes técnicas, documentando hallazgos para contribuir a la continuidad operativa."
   ],
   "stack": [
-    "C#",
-    "Java",
+    "Application Support",
+    "Software Maintenance",
     "SQL",
     "SQL Server",
     "MySQL",
-    "Application Support",
-    "Incident Management",
-    "Troubleshooting",
-    "Software Maintenance",
-    "Network Support",
-    "Call Center Applications"
+    "Java",
+    "C#",
+    "Incident Management"
   ]
 };

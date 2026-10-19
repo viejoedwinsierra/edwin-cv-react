@@ -13,25 +13,13 @@ export const solemSupportAnalyst = {
   "stack": [
     "Application Support",
     "L2/L3 Support",
-    "24x7 Support",
-    "Production Support",
-    "Deployment Support",
-    "Operational Continuity",
     "Java",
     "Oracle",
     "SQL",
     "SOAP",
     "Web Services",
-    "JIRA",
-    "Banking",
-    "SME Banking",
-    "ACH",
-    "Bulk Payments",
-    "Roles & Permissions",
-    "Service Integration",
-    "Integration Buses",
-    "ATH",
+    "Jira",
     "Incident Management",
-    "Troubleshooting"
+    "Banking Applications"
   ]
 };

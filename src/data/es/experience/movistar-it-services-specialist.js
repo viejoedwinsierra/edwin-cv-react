@@ -11,14 +11,20 @@ export const movistarItServicesSpecialist = {
       "Brindé soporte especializado a aplicaciones empresariales, diagnosticando y resolviendo incidentes, realizando análisis de causa raíz y acompañando cambios productivos para contribuir a la continuidad operativa."
   ],
   "stack": [
-    "Technical Leadership", "Application Management", "Java", "Spring Boot", "Python", "Flask", "PHP", "Angular", "React",
-    "PostgreSQL", "Oracle", "SQL Server", "SQL", "DML Triggers", "Batch Processing", "REST APIs", "SOAP", "ESB", "Azure",
-    "Azure Functions", "Azure Blob Storage", "Azure Virtual Network", "VPN", "Kubernetes", "Argo CD", "GitOps",
-    "Infrastructure Monitoring", "AWS · formación y laboratorios", "Oracle Cloud", "Azure DevOps", "CI/CD", "Git", "GitHub",
-    "JUnit", "Mockito", "SonarQube", "Static Code Analysis", "Code Quality", "Remedy", "ITSM", "Incident Management", "Change Management", "Request Management",
-    "Production Support", "Root Cause Analysis (RCA)", "Release Management", "Deployment Support", "IBM DataStage",
-    "Business Intelligence (BI)", "Power BI", "Excel", "Microsoft Access", "KPIs", "Automated Reporting",
-    "Computer Vision", "2FA/MFA", "Enterprise Integration", "SAP", "SuccessFactors", "Generative AI", "ChatGPT", "Kiro",
-    "Contract Management", "GSMA", "IMEI Management", "Data Privacy"
+    "Java",
+    "Spring Boot",
+    "Python",
+    "React",
+    "Angular",
+    "PostgreSQL",
+    "Oracle",
+    "REST APIs",
+    "SOAP",
+    "Azure DevOps",
+    "CI/CD",
+    "Kubernetes",
+    "IBM DataStage",
+    "Git",
+    "Azure"
   ]
 };
