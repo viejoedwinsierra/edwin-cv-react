@@ -1,6 +1,6 @@
 export const roleFamilies = {
   itServices: {
-    label: { es: 'Servicios TI y Aplicaciones Empresariales', en: 'IT Services & Enterprise Applications' },
+    label: { es: 'Full Stack Development · Enterprise Integration · Technical Leadership', en: 'Full Stack Development · Enterprise Integration · Technical Leadership' },
     keywords: ['Application Support', 'Incident Management', 'Root Cause Analysis', 'Enterprise APIs', 'CRM', 'Billing Systems', 'SAP', 'SuccessFactors', 'SQL'],
     certificationDomains: ['enterprise-applications', 'security', 'delivery', 'business']
   },

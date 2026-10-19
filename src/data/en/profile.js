@@ -1,7 +1,7 @@
 export const profile = {
   profile: {
     name: 'Edwin Gustavo Sierra Poveda',
-    title: 'Backend | Cloud | Data Engineering — Java · Python · PostgreSQL · Azure',
+    title: 'Software Engineering | Cloud | Data Engineering',
     location: 'Chía / Bogotá, Colombia',
     email: 'edwin.sierra.vlt@gmail.com',
     linkedin: 'https://www.linkedin.com/in/edwin-gustavo-sierra-poveda/',
